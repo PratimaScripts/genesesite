@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 import Navigation from "./Navigation";
 import Carousel from "./CarouselSlider";
 import Homepage from "./Homepage/Homepage";
