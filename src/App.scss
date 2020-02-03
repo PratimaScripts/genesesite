@@ -5,7 +5,7 @@
 @import url("https://fonts.googleapis.com/css?family=Vollkorn:700,900&display=swap");
 
 //Orlando Primary Theme Color
-$genese-primary: #0048C5;
+$genese-primary: #135a70;
 $genese-secondary: #FE9900;
 $primary-font: "Public Sans",
 -apple-system,
@@ -80,6 +80,10 @@ body {
     background-repeat: no-repeat;
     background-position: 100% -10px;
     padding-top: 90px;
+}
+
+img {
+    max-width: 100%;
 }
 
 h3 {
@@ -222,4 +226,48 @@ a {
             }
         }
     }
+}
+
+.section {
+    padding: 120px 0;
+
+    * {
+        text-align: center;
+    }
+}
+
+.partners img {
+    max-width: 200px;
+    margin: 0 23px;
+}
+
+.footer {
+    padding: 60px 0;
+    background: $primary;
+    color: $white;
+
+    .App-logo {
+        height: auto;
+        width: 120px;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .d-flex div {
+        width: 25%;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+}
+
+.bottom-bar {
+    background: darken($primary, 10%);
+    padding: 20px 0;
 }
