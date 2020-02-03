@@ -23,7 +23,18 @@ function renderLink(link) {
 function Homepage() {
   return (
     <div>
-      content here
+      {data.Content.map((item, i) => {
+        return (
+          <div key={i}>
+            <Jumbotron className="App-jumbotron">
+              <h1>{item.title}</h1>
+              <p>{item.paragraph}</p>
+              <div className="App-banner">{renderImages(item.images)}</div>
+              <p>{renderLink(item.link)}</p>
+            </Jumbotron>
+          </div>
+        );
+      })}
     </div>
   );
 }

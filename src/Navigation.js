@@ -2,6 +2,8 @@ import React from "react";
 import logo from "./logo.svg";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
@@ -14,7 +16,7 @@ function Navigation() {
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
+        <Nav className="ml-auto">
           <NavDropdown title="About">
             <NavDropdown.Item href="#action/1.1">Who we are</NavDropdown.Item>
             <NavDropdown.Item href="#action/2.2">How we work</NavDropdown.Item>
@@ -23,7 +25,42 @@ function Navigation() {
             </NavDropdown.Item>
           </NavDropdown>
         <NavDropdown title="Products" className="mega-menu">
-            <Container>Products mega menu!</Container>
+            <Container className="d-block">
+                <Row>
+                    <Col>
+                        <h5>Our Key Solution</h5>
+                        <ul>
+                            <li><a href="#">Storage</a></li>
+                            <li><a href="#">Atlassian</a></li>
+                            <li><a href="#">Microsoft Workloads</a></li>
+                        </ul>
+                    </Col>
+                    <Col>
+                        <h5>Our Customer Reference</h5>
+                        <ul>
+                            <li><a href="#">Attendance System</a></li>
+                            <li><a href="#">Career Genese</a></li>
+                            <li><a href="#">Deshsanchar CloudFront</a></li>
+                            <li><a href="#">Attendance System Cloudfront</a></li>
+                            <li><a href="#">Leapfrog</a></li>
+                            <li><a href="#">Nepal Distillery</a></li>
+                            <li><a href="#">Ashlesha Tally</a></li>
+                        </ul>
+                    </Col>
+                    <Col>
+                        <h5>Case Studies</h5>
+                        <ul>
+                            <li><a href="#">Sipradi</a></li>
+                            <li><a href="#">Deshsanchar</a></li>
+                            <li><a href="#">Longtail</a></li>
+                            <li><a href="#">APCA</a></li>
+                            <li><a href="#">Buddha Air</a></li>
+                            <li><a href="#">eSewapasal</a></li>
+                            <li><a href="#">Khalti</a></li>
+                        </ul>
+                    </Col>
+                  </Row>
+            </Container>
           </NavDropdown>
           <NavDropdown title="Services">
             <NavDropdown.Item href="#action/2.1">

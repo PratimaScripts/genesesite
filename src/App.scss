@@ -6,6 +6,7 @@
 
 //Orlando Primary Theme Color
 $genese-primary: #0048C5;
+$genese-secondary: #FE9900;
 $primary-font: "Public Sans",
 -apple-system,
 BlinkMacSystemFont,
@@ -49,8 +50,14 @@ $headings-font-weight: 700;
 //$enable-gradients: true;
 // $navbar-brand-font-size: 1.25rem;
 $primary: $genese-primary;
+$secondary: $genese-secondary;
 $theme-colors: ("primary": $genese-primary,
+    "secondary": $genese-secondary,
     "danger": #FC574D);
+$container-max-widths: (sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1210px);
 
 
 // Bootstrap SCSS import
@@ -72,10 +79,12 @@ body {
     background-size: 100px;
     background-repeat: no-repeat;
     background-position: 100% -10px;
+    padding-top: 90px;
 }
 
 h3 {
     font-size: 48px;
+    margin-bottom: 25px;
 }
 
 .font {
@@ -89,7 +98,22 @@ h3 {
 }
 
 p {
-    margin-bottom: 0.5rem;
+    margin-bottom: 25px;
+}
+
+a {
+    color: $secondary;
+
+    &:hover {
+        color: darken($secondary, 5%);
+    }
+}
+
+.btn {
+    border-radius: 4px !important;
+    min-width: 190px;
+    padding: 10px;
+    font-size: 16px;
 }
 
 .navbar {
@@ -122,20 +146,50 @@ p {
         }
     }
 
-    @media screen and (min-width: 992px) {
-        .mega-menu {
-            position: static;
+    .mega-menu {
+        position: static;
 
-            .dropdown-menu {
-                width: 100%;
-                left: 0;
-                right: 0;
-                top: 90px;
-                background: #145970;
-                border-radius: 0;
-                min-height: 300px;
-                margin: 0;
+        .dropdown-menu {
+            width: 100%;
+            left: 0;
+            right: 0;
+            top: 90px;
+            background: #145970;
+            border-radius: 0;
+            min-height: 300px;
+            margin: 0;
+            color: #fff;
+            padding: 30px 0;
+
+            .container {
+                display: block;
+            }
+
+            h5 {
+                border-bottom: 1px solid #104557;
+                display: inline-block;
+                padding-bottom: 5px;
+                letter-spacing: 0.5px;
+            }
+
+            a {
                 color: #fff;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            ul {
+                padding: 0;
+                margin: 0;
+                margin-top: 15px;
+
+                li {
+                    list-style-type: none;
+                    margin-bottom: 7px;
+                }
             }
         }
     }
@@ -143,7 +197,29 @@ p {
 
 .carousel {
     .carousel-item {
-        max-height: 768px !important;
-        object-fit: contain;
+        height: 768px !important;
+        background-size: cover;
+        background-position: center;
+
+        .carousel-caption {
+            position: static;
+            //            width: 50%;
+            text-align: left;
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            .container > div {
+                width: 60%;
+            }
+
+            .btn {
+                margin-bottom: 25px;
+            }
+
+            &.dark {
+                color: #212529;
+            }
+        }
     }
 }
