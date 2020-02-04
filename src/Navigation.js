@@ -30,33 +30,33 @@ function Navigation() {
                     <Col>
                         <h5>Our Key Solution</h5>
                         <ul>
-                            <li><a href="#">Storage</a></li>
-                            <li><a href="#">Atlassian</a></li>
-                            <li><a href="#">Microsoft Workloads</a></li>
+                            <li><a href="/#">Storage</a></li>
+                            <li><a href="/#">Atlassian</a></li>
+                            <li><a href="/#">Microsoft Workloads</a></li>
                         </ul>
                     </Col>
                     <Col>
                         <h5>Our Customer Reference</h5>
                         <ul>
-                            <li><a href="#">Attendance System</a></li>
-                            <li><a href="#">Career Genese</a></li>
-                            <li><a href="#">Deshsanchar CloudFront</a></li>
-                            <li><a href="#">Attendance System Cloudfront</a></li>
-                            <li><a href="#">Leapfrog</a></li>
-                            <li><a href="#">Nepal Distillery</a></li>
-                            <li><a href="#">Ashlesha Tally</a></li>
+                            <li><a href="/#">Attendance System</a></li>
+                            <li><a href="/#">Career Genese</a></li>
+                            <li><a href="/#">Deshsanchar CloudFront</a></li>
+                            <li><a href="/#">Attendance System Cloudfront</a></li>
+                            <li><a href="/#">Leapfrog</a></li>
+                            <li><a href="/#">Nepal Distillery</a></li>
+                            <li><a href="/#">Ashlesha Tally</a></li>
                         </ul>
                     </Col>
                     <Col>
                         <h5>Case Studies</h5>
                         <ul>
-                            <li><a href="#">Sipradi</a></li>
-                            <li><a href="#">Deshsanchar</a></li>
-                            <li><a href="#">Longtail</a></li>
-                            <li><a href="#">APCA</a></li>
-                            <li><a href="#">Buddha Air</a></li>
-                            <li><a href="#">eSewapasal</a></li>
-                            <li><a href="#">Khalti</a></li>
+                            <li><a href="/#">Sipradi</a></li>
+                            <li><a href="/#">Deshsanchar</a></li>
+                            <li><a href="/#">Longtail</a></li>
+                            <li><a href="/#">APCA</a></li>
+                            <li><a href="/#">Buddha Air</a></li>
+                            <li><a href="/#">eSewapasal</a></li>
+                            <li><a href="/#">Khalti</a></li>
                         </ul>
                     </Col>
                   </Row>
