@@ -3,6 +3,7 @@ import "./App.scss";
 import Navigation from "./Navigation";
 import Carousel from "./CarouselSlider";
 import Homepage from "./Homepage/Homepage";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
       <div id="main-content">
         <Homepage />
       </div>
+
+      <Footer />
+     
     </div>
   );
 }
