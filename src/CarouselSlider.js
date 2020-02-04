@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 
 function CarouselSlider() {
   return (
-    <Carousel interval="3000">
+    <Carousel interval="30000">
       <Carousel.Item style={{ backgroundImage: "url(" + "http://dev.genesesolution.com/wp-content/uploads/2018/11/monitoring-1.jpg" + ")" }}>
         <Carousel.Caption>
           <Container>
@@ -64,7 +64,7 @@ function CarouselSlider() {
             </Container>
         </Carousel.Caption>
       </Carousel.Item>
-          <Carousel.Item style={{ backgroundImage: "url(" + "http://dev.genesesolution.com/wp-content/uploads/2018/11/aws-1.jpg" + ")" }}>
+          <Carousel.Item style={{ backgroundImage: "url(" + "http://dev.genesesolution.com/wp-content/uploads/2018/11/web-development.jpg" + ")" }}>
         <Carousel.Caption className="dark">
           <Container>
               <div>
