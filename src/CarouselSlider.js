@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 function CarouselSlider() {
   return (
     <Carousel interval="30000">
-      <Carousel.Item style={{ backgroundImage: "url(" + "http://dev.genesesolution.com/wp-content/uploads/2018/11/monitoring-1.jpg" + ")" }}>
+      <Carousel.Item style={{ backgroundImage: "url(http://dev.genesesolution.com/wp-content/uploads/2018/11/monitoring-1.jpg)" }}>
         <Carousel.Caption>
           <Container>
               <div>
@@ -23,7 +23,7 @@ function CarouselSlider() {
             </Container>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item style={{ backgroundImage: "url(" + "http://dev.genesesolution.com/wp-content/uploads/2018/10/cloud-computing.jpg" + ")" }}>
+      <Carousel.Item style={{ backgroundImage: "url(http://dev.genesesolution.com/wp-content/uploads/2018/10/cloud-computing.jpg)" }}>
         <Carousel.Caption>
           <Container>
               <div>
@@ -43,7 +43,7 @@ function CarouselSlider() {
             </Container>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item style={{ backgroundImage: "url(" + "http://dev.genesesolution.com/wp-content/uploads/2018/11/aws-1.jpg" + ")" }}>
+      <Carousel.Item style={{ backgroundImage: "url(http://dev.genesesolution.com/wp-content/uploads/2018/11/aws-1.jpg)" }}>
         <Carousel.Caption className="dark">
           <Container>
               <div>
@@ -64,14 +64,14 @@ function CarouselSlider() {
             </Container>
         </Carousel.Caption>
       </Carousel.Item>
-          <Carousel.Item style={{ backgroundImage: "url(" + "http://dev.genesesolution.com/wp-content/uploads/2018/11/web-development.jpg" + ")" }}>
+          <Carousel.Item style={{ backgroundImage: "url(http://dev.genesesolution.com/wp-content/uploads/2018/11/web-development.jpg)" }}>
         <Carousel.Caption className="dark">
           <Container>
               <div>
             <h3>Hire us or with us!</h3>
           <h5>Hire one of our experts or let us do the hiring for you!</h5>
           <p>
-            Define your criteria and we'll do the hiring for you. We are an AWS Advanced Tier Partner and have a team of talented Architects, Developers and DevOps internationally certified to Professional level. Our thorough and sustainable hiring pipeline allows you to choose the best talent from our internal team or internationally. Based in the UK with Tier 2 Visa sponsorship we are able to provide teams locally and remotely. We have offices in the UK, Australia, Nepal, Pakistan and Bangladesh. Have exclusive, first-hand access to talented candidates straight from our <a target="_blank"  href="https://www.genesecloud.academy">Cloud Academy</a>
+            Define your criteria and we'll do the hiring for you. We are an AWS Advanced Tier Partner and have a team of talented Architects, Developers and DevOps internationally certified to Professional level. Our thorough and sustainable hiring pipeline allows you to choose the best talent from our internal team or internationally. Based in the UK with Tier 2 Visa sponsorship we are able to provide teams locally and remotely. We have offices in the UK, Australia, Nepal, Pakistan and Bangladesh. Have exclusive, first-hand access to talented candidates straight from our <a target="_blank" rel="noopener noreferrer" href="https://www.genesecloud.academy">Cloud Academy</a>
             </p>
             </div>
             </Container>
