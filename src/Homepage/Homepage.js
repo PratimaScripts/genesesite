@@ -1,11 +1,6 @@
 import React from "react";
-import logo from "./logo.svg";
-import offer from "./offer.png";
 import Container from "react-bootstrap/Container";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
 import data from "./HomepageData";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function renderImages(images) {
   if (images === undefined) {
