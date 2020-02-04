@@ -15,7 +15,7 @@ function renderImages(images) {
 function renderLink(link) {
   if (link === undefined) {
     return null;
-  } else if (link.url != undefined) {
+  } else if (link.url !== undefined) {
     return <a href={link.url}>{link.text}</a>;
   }
 }
