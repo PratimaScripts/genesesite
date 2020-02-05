@@ -83,9 +83,9 @@ function Navigation() {
           </NavDropdown>
           <Nav.Link href="https://www.genesecloud.academy/" target="_blank">Cloud Academy</Nav.Link>
           <NavDropdown title="Contact">
-            <NavDropdown.Item href="#action/4.1">Careers</NavDropdown.Item>
-            <NavDropdown.Item href="#action/4.1">Sales</NavDropdown.Item>
-            <NavDropdown.Item href="#action/4.2">Support</NavDropdown.Item>
+            <NavDropdown.Item href="#careers">Careers</NavDropdown.Item>
+            <NavDropdown.Item href="#sales">Sales</NavDropdown.Item>
+            <NavDropdown.Item href="#support">Support</NavDropdown.Item>
           </NavDropdown>
         </Nav>
       </Navbar.Collapse>
