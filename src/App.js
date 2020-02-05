@@ -1,9 +1,12 @@
 import React from "react";
 import "./App.scss";
 import Navigation from "./Navigation";
-import Carousel from "./CarouselSlider";
 import Homepage from "./Homepage/Homepage";
 import Footer from "./Footer";
+import { HashRouter, Switch, Route } from "react-router-dom";
+import CareersForm from "./Contact/CareersForm";
+import SalesForm from "./Contact/SalesForm";
+import SupportForm from "./Contact/SupportForm";
 
 function App() {
   return (
@@ -11,15 +14,19 @@ function App() {
       <header className="App-header">
         <Navigation />
       </header>
-      <div id="carousel">
-        <Carousel />
-      </div>
+     
       <div id="main-content">
-        <Homepage />
+        <HashRouter>
+          <Switch>
+            <Route exact path="/" component={Homepage} />
+            <Route path="/careers" component={CareersForm} />
+            <Route path="/sales" component={SalesForm} />
+            <Route path="/support" component={SupportForm} />
+          </Switch>
+        </HashRouter>
       </div>
 
       <Footer />
-     
     </div>
   );
 }
