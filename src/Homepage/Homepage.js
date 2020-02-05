@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import data from "./HomepageData";
+import Carousel from "../CarouselSlider";
 
 function renderImages(images) {
   if (images === undefined) {
@@ -25,18 +26,26 @@ function Homepage() {
     <div>
       {data.Content.map((item, i) => {
         return (
-          <div key={i} className={item.class}>
-            <Container>
-              <div className="section">
-                <h3>{item.title}</h3>
-                <p>{item.paragraph}</p>
-                <div className="image-section">{renderImages(item.images)}</div>
-                <p>{renderLink(item.link)}</p>
-              </div>
-            </Container>
-          </div>
+          <>
+            <div id="carousel">
+              <Carousel />
+            </div>
+
+            <div key={i} className={item.class}>
+              <Container>
+                <div className="section">
+                  <h3>{item.title}</h3>
+                  <p>{item.paragraph}</p>
+                  <div className="image-section">
+                    {renderImages(item.images)}
+                  </div>
+                  <p>{renderLink(item.link)}</p>
+                </div>
+              </Container>
+            </div>
+          </>
         );
-      })}      
+      })}
     </div>
   );
 }
