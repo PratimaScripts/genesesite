@@ -75,7 +75,7 @@ function Footer() {
       </div>
       <div className="bottom-bar">
         <Container>
-          <p class="text-white m-0">&copy; Copyright 2020 Genese</p>
+          <p className="text-white m-0">&copy; Copyright 2020 Genese</p>
         </Container>
       </div>
     </div>
