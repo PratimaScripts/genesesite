@@ -113,6 +113,7 @@ a {
 
 .navbar {
   min-height: 90px;
+  padding: 0;
 
   .navbar-brand {
     img {
@@ -326,11 +327,15 @@ a {
     width: 25%;
     display: flex;
     align-items: center;
-    padding: 5px;
+	padding: 5px;
+	flex: 0 50%;
   }
 
   ul {
-    padding-left: 20px;
+	padding-left: 0px;
+	li{
+		display: block;
+	}
   }
 }
 
@@ -449,10 +454,6 @@ a {
     }
   }
 }
-
-ul li {
-  margin-bottom: 16px;
-  position: relative;
-  padding-left: 34px;
-  display: block;
+.container-fluid{
+	padding: 0 50px;
 }
