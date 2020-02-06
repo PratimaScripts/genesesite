@@ -4,12 +4,16 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import logo from "./Homepage/logo.svg";
 import offer from "./Homepage/offer.png";
+import AwsWhite from "./Homepage/partner-logos/aws-white.png";
+import AzureWhite from "./Homepage/partner-logos/azure-white.png";
+import GoogleCloudWhite from "./Homepage/partner-logos/google-cloud-white.png";
+import AtlassianWhite from "./Homepage/partner-logos/atlassian-white.png";
 
 function Footer() {
   return (
     <div>
       <div className="footer">
-        <Container>
+        <Container fluid>
           <Row>
             <Col lg={3}>
               <h5>Contact</h5>
@@ -18,6 +22,7 @@ function Footer() {
               <p>Kathmandu, Nepal +9779801837374</p>
               <p>sales@genesolution.com</p>
               <p>support@genesesolution.com</p>
+              <p>info@genesesolution.com</p>
             </Col>
             <Col lg={3}>
               <h5>Quick Links</h5>
@@ -29,21 +34,19 @@ function Footer() {
                   <a href="/#">How we Work</a>
                 </li>
               </ul>
-              <div className="bg-white p-1 rounded">
-                <h5 className="text-dark text-center">Our Partners</h5>
-                <div className="d-flex">
-                  <div>
-                    <img src="http://dev.genesesolution.com/wp-content/uploads/2018/12/partner_amazon.png" alt="partner_amazon"></img>
-                  </div>
-                  <div>
-                    <img src="http://dev.genesesolution.com/wp-content/uploads/2018/12/partner_azure.png" alt="partner_azure"></img>
-                  </div>
-                  <div>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Google_Cloud_Logo.svg/200px-Google_Cloud_Logo.svg.png" alt="partner_google"></img>
-                  </div>
-                  <div>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Atlassian-logo.svg/1280px-Atlassian-logo.svg.png" alt="partner_atlassian"></img>
-                  </div>
+              <h5 className="">Our Partners</h5>
+              <div className="d-flex flex-wrap">
+                <div>
+                  <img src={AwsWhite} alt="partner_amazon"></img>
+                </div>
+                <div>
+                  <img src={AzureWhite} alt="partner_azure"></img>
+                </div>
+                <div>
+                  <img src={GoogleCloudWhite} alt="partner_google"></img>
+                </div>
+                <div>
+                  <img src={AtlassianWhite} alt="partner_atlassian"></img>
                 </div>
               </div>
             </Col>
@@ -62,19 +65,17 @@ function Footer() {
                 <li>
                   <a href="/#">Dedicated Teams </a>
                 </li>
-                <li>
-                  <a href="/#">Dedicated Teams </a>
-                </li>
               </ul>
             </Col>
             <Col lg={3}>
-              <img src={offer} alt="offer"></img>
+              <img src={offer} alt="offer" width="80%"></img>
             </Col>
           </Row>
         </Container>
       </div>
-      <div className="bottom-bar">
-        <Container>
+      <div className="bottom-bar text-left">
+        <Container fluid>
+          <a href="#" className="float-right">Privacy Policy</a>
           <p className="text-white m-0">&copy; Copyright 2020 Genese</p>
         </Container>
       </div>
