@@ -4,7 +4,6 @@ import Navigation from "./Navigation";
 import Homepage from "./Homepage/Homepage";
 import Footer from "./Footer";
 import { HashRouter, Switch, Route } from "react-router-dom";
-import CareersForm from "./Contact/CareersForm";
 import SalesForm from "./Contact/SalesForm";
 import SupportForm from "./Contact/SupportForm";
 
@@ -19,7 +18,6 @@ function App() {
         <HashRouter>
           <Switch>
             <Route exact path="/" component={Homepage} />
-            <Route path="/careers" component={CareersForm} />
             <Route path="/sales" component={SalesForm} />
             <Route path="/support" component={SupportForm} />
           </Switch>
