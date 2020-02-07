@@ -75,7 +75,7 @@ function Footer() {
       </div>
       <div className="bottom-bar text-left">
         <Container fluid>
-          <a href="#" className="float-right">Privacy Policy</a>
+          <a href="/#" className="float-right">Privacy Policy</a>
           <p className="text-white m-0">&copy; Copyright 2020 Genese</p>
         </Container>
       </div>
