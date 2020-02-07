@@ -1,5 +1,4 @@
 import React from "react";
-import data from "./HomepageData";
 import Carousel from "../CarouselSlider";
 import Container from "react-bootstrap/Container";
 import Row from 'react-bootstrap/Row';
@@ -90,7 +89,7 @@ function Homepage() {
 					  	
 					  </Col>
 				  </Row>
-				  <p><a href="#">More details on how we can help you build and optimise your website, mobile app or cloud services.</a></p>
+				  <p><a href="/#">More details on how we can help you build and optimise your website, mobile app or cloud services.</a></p>
             </Container>
         </div>
 		  <div className="section bg-white">
@@ -158,7 +157,7 @@ function Homepage() {
 							</Card>
 					</Col>
 				  </Row>
-				  <p><a href="#">Start a project with us, arrange a free consultation here.</a></p>
+				  <p><a href="/#">Start a project with us, arrange a free consultation here.</a></p>
             </Container>
         </div>
 		  <div className="section bg-primary text-white">
@@ -226,7 +225,7 @@ function Homepage() {
 							</Card>
 					</Col>
 				  </Row>
-				  <p><a href="#">Find out more on how we can help in your industry.</a></p>
+				  <p><a href="/#">Find out more on how we can help in your industry.</a></p>
             </Container>
         </div>
 		  <div className="section p-0 bg-light">
@@ -262,7 +261,7 @@ function Homepage() {
 										</Card>
 								</Col>
 							  </Row>
-							<p><a href="#">View all of our internationally recognised certifications.</a></p>
+							<p><a href="/#">View all of our internationally recognised certifications.</a></p>
 						</div>
 					  </Col>
 				  </Row>
