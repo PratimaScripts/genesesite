@@ -68,7 +68,7 @@ function Footer() {
               </ul>
             </Col>
             <Col lg={3}>
-              <img src={offer} alt="offer" width="80%"></img>
+              <a href="offer/welcome"><img src={offer} alt="offer" width="80%"></img></a>
             </Col>
           </Row>
         </Container>
