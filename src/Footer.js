@@ -20,7 +20,7 @@ function Footer() {
               <img src={logo} id="logo" className="App-logo" alt="logo" />
               <p>London, UK (+44) 020 38437303</p>
               <p>Kathmandu, Nepal +9779801837374</p>
-              <p>sales@genesolution.com</p>
+              <p>sales@genesesolution.com</p>
               <p>support@genesesolution.com</p>
               <p>info@genesesolution.com</p>
             </Col>
