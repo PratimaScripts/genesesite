@@ -327,15 +327,19 @@ a {
     width: 25%;
     display: flex;
     align-items: center;
-	padding: 5px;
-	flex: 0 50%;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    flex: 0 50%;
+    img{
+      border-radius: 5px;
+    }
   }
 
   ul {
-	padding-left: 0px;
-	li{
-		display: block;
-	}
+    padding-left: 0px;
+    li {
+      display: block;
+    }
   }
 }
 
@@ -454,6 +458,6 @@ a {
     }
   }
 }
-.container-fluid{
-	padding: 0 50px;
+.container-fluid {
+  padding: 0 50px;
 }
