@@ -12,13 +12,12 @@ function SalesForm() {
   const [validated, setValidated] = useState(false);
 
   const [formInput, setFormInput] = useState({
-    fname: "",
-    lname: "",
-    city: "",
-    state: "",
+    name: "",
     email_id: "",
-    subject: "",
-    message: ""
+    location: "",
+    areaOfInterest: "",
+    details: "",
+    contact_method: ""
   });
 
   const handleChange = e => {
@@ -28,25 +27,28 @@ function SalesForm() {
     });
   };
 
+  // sales@genesesolution.com, shrawan@genesesolution.com
   const handleSubmit = event => {
     event.preventDefault();
     const form = event.currentTarget;
     if (
-      formInput.fname !== "" &&
-      formInput.lname !== "" &&
-      formInput.city !== "" &&
-      formInput.state !== "" &&
+      formInput.name !== "" &&
       formInput.email_id !== "" &&
-      formInput.subject !== "" &&
+      formInput.contact_method !== "" && 
+      formInput.location !== "" &&
+      formInput.areaOfInterest !== "" &&
       formInput.message !== ""
     ) {
       let templateParams = {
         from_email: formInput.email_id,
         to_email: "astute.yard@gmail.com",
         subject: formInput.subject,
-        html: formInput.message,
-        fname: formInput.fname,
-        lname: formInput.lname
+        html: `Sales Inquiry from ${formInput.name}`,
+        contact_method: formInput.contact_method,
+        name: formInput.name,
+        location: formInput.location,
+        areaOfInterest: formInput.areaOfInterest,
+        message: formInput.message
       };
 
       emailjs
@@ -99,9 +101,9 @@ function SalesForm() {
                     <Form.Control
                       required
                       type="text"
-                      placeholder="First name"
+                      placeholder="Name"
                       onChange={handleChange}
-                      name="fname"
+                      name="name"
                     />
                     <Form.Control.Feedback className="text-muted">
                       Looks good!
@@ -113,7 +115,7 @@ function SalesForm() {
                       <InputGroup.Prepend>
                         <InputGroup.Radio name="contact_method" />
                       </InputGroup.Prepend>
-                      <Form.Control placeholder="Email Address" />
+                      <Form.Control name="email_id" placeholder="Email Address" />
                     </InputGroup>
                     <InputGroup>
                       <InputGroup.Prepend>
@@ -135,11 +137,18 @@ function SalesForm() {
                     </Form.Control>
                     <Form.Control as="select" onChange={handleChange}>
                       <option>Month</option>
-                      <option>UK</option>
-                      <option>Australia</option>
-                      <option>USA</option>
-                      <option>Nepal</option>
-                      <option>India</option>
+                      <option>January</option>
+                      <option>February</option>
+                      <option>March</option>
+                      <option>April</option>
+                      <option>May</option>
+                      <option>June</option>
+                      <option>July</option>
+                      <option>August</option>
+                      <option>September</option>
+                      <option>October</option>
+                      <option>November</option>
+                      <option>December</option>
                     </Form.Control>
                     <Form.Control as="select" onChange={handleChange}>
                       <option>Time</option>
@@ -158,7 +167,7 @@ function SalesForm() {
                 <Col lg={6}>
                   <Form.Group controlId="formBasicLastname">
                     <Form.Label>Location</Form.Label>
-                    <Form.Control as="select" onChange={handleChange}>
+                    <Form.Control as="select" name="location" onChange={handleChange}>
                       <option>Choose a Location</option>
                       <option>UK</option>
                       <option>Australia</option>
