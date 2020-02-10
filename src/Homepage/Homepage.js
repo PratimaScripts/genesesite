@@ -7,7 +7,7 @@ import AwsLogo from "./partner-logos/aws.svg";
 import AzureLogo from "./partner-logos/azure.svg";
 import GoogleCloudLogo from "./partner-logos/googleCloud.svg";
 import AtlassianLogo from "./partner-logos/atlassian.svg";
-import CloudExpert from "./images/cloud-expert.png";
+import CloudExpert from "./images/cloud-expert.svg";
 import Certification from "./images/certification.jpg";
 import WebDevelopment from "./images/web-development-bg.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
