@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "./logo.svg";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
@@ -8,6 +8,10 @@ import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
 function Navigation() {
+  const [isOpenAbout, setIsOpenAbout] = useState(false);
+  const [isOpenServices, setIsOpenServices] = useState(false);
+  const [isOpenContact, setIsOpenContact] = useState(false);
+
   return (
     <Navbar bg="white" expand="lg" fixed="top">
       <Container fluid>
@@ -17,7 +21,12 @@ function Navigation() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <NavDropdown title="About">
+            <NavDropdown
+              title="About"
+              onMouseEnter = { () => setIsOpenAbout(true) }
+              onMouseLeave = { () => setIsOpenAbout(false) }
+              show={ isOpenAbout }
+            >
               <NavDropdown.Item href="#action/1.1">Who we are</NavDropdown.Item>
               <NavDropdown.Item href="#action/2.2">
                 How we work
@@ -98,7 +107,12 @@ function Navigation() {
                 </Row>
               </Container>
             </NavDropdown> */}
-            <NavDropdown title="Services">
+            <NavDropdown
+              title="Services"
+              onMouseEnter = { () => setIsOpenServices(true) }
+              onMouseLeave = { () => setIsOpenServices(false) }
+              show={ isOpenServices }
+            >
               <NavDropdown.Item href="#action/2.1">
                 Cloud Digital Transformation
               </NavDropdown.Item>
@@ -115,7 +129,12 @@ function Navigation() {
             <Nav.Link href="https://www.genesecloud.academy/" target="_blank">
               Cloud Academy
             </Nav.Link>
-            <NavDropdown title="Contact">
+            <NavDropdown
+              title="Contact"
+              onMouseEnter={() => setIsOpenContact(true)}
+              onMouseLeave={() => setIsOpenContact(false)}
+              show={isOpenContact}
+            >
               <NavDropdown.Item href="#sales">Sales</NavDropdown.Item>
               <NavDropdown.Item href="#support">Support</NavDropdown.Item>
             </NavDropdown>
