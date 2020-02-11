@@ -7,7 +7,7 @@ import AwsLogo from "./partner-logos/aws.svg";
 import AzureLogo from "./partner-logos/azure.svg";
 import GoogleCloudLogo from "./partner-logos/googleCloud.svg";
 import AtlassianLogo from "./partner-logos/atlassian.svg";
-import CloudExpert from "./images/cloud-expert.png";
+import CloudExpert from "./images/cloud-expert.svg";
 import Certification from "./images/certification.jpg";
 import WebDevelopment from "./images/web-development-bg.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -72,7 +72,7 @@ function Homepage() {
 					  	<div className="section-content right text-left">
 							<h3>Cloud Experts Driving Digital Transformation</h3>
 				  			<p>Are you a startup?  Small or medium businesses? We provide expert IT advice, cloud migration, service integration and software development. Allowing your company to focus on its core business. Our management team has experience working for big companies like eBay, Microsoft, Amazon, Rackspace and Capital One.</p>
-							<p><a href="/services/software-development">Learn more about how our certified cloud experts can take care of your digital transformation</a></p>
+							<p><a href="/services/digital-transformation">Learn more about how our certified cloud experts can take care of your digital transformation</a></p>
 						</div>
 					  </Col>
 				  </Row>
@@ -89,7 +89,7 @@ function Homepage() {
 					  	
 					  </Col>
 				  </Row>
-				  <p><a href="/#">More details on how we can help you build and optimise your website, mobile app or cloud services.</a></p>
+				  <p><a href="/services/software-development">More details on how we can help you build and optimise your website, mobile app or cloud services.</a></p>
             </Container>
         </div>
 		  <div className="section bg-white">
@@ -157,7 +157,7 @@ function Homepage() {
 							</Card>
 					</Col>
 				  </Row>
-				  <p><a href="/#">Start a project with us, arrange a free consultation here.</a></p>
+				  <p><a href="#sales">Start a project with us, arrange a free consultation here.</a></p>
             </Container>
         </div>
 		  <div className="section bg-primary text-white">
@@ -225,7 +225,7 @@ function Homepage() {
 							</Card>
 					</Col>
 				  </Row>
-				  <p><a href="/#">Find out more on how we can help in your industry.</a></p>
+				  <p><a href="#sales">Find out more on how we can help in your industry.</a></p>
             </Container>
         </div>
 		  <div className="section p-0 bg-light">
@@ -237,7 +237,7 @@ function Homepage() {
 					  </Col>
 					  <Col lg={6} className="p-0">
 					  	<div className="section-content right text-left">
-							<h3>We have certification with the major cloud providers to offer you the best solution</h3>
+							<p><strong>Our team is experienced and qualified. Our cloud experts have achieved a range of technical certifications with the major cloud providers. This extensive knowledge allows us to provide the best solution for you. </strong></p>
 				  			<Row className="certifications">
 								<Col lg={4}>
 									<Card>

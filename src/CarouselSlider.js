@@ -78,7 +78,7 @@ function CarouselSlider() {
                 Azure and Google Cloud, our fully qualified cloud Architects,
                 Developers and DevOps professionals will assess and optimise
                 your infrastructure and applications. We're ready to pick up
-                your cloud environment and manage it for you ,so you can focus
+                your cloud environment and manage it for you, so you can focus
                 on your business. Take advantage of our introductory offers
                 starting from £250 per day.*.
               </p>
@@ -103,12 +103,12 @@ function CarouselSlider() {
         <Carousel.Caption className="dark">
           <Container>
             <div>
-              <h3>Build your own team</h3>
+              <h3>Build Your Own Team</h3>
               <h5>
                 Hire from our of team experts or let us do the hiring for you
               </h5>
               <p>
-                Improve speed and flexibility of your organisation with on
+                Improve the speed and flexibility of your organisation with on
                 demand talent. Our thorough and sustainable hiring pipeline
                 provides the expertise you need, as and when you need them. Make
                 use of our internal team, or hire internationally. All you have
@@ -116,9 +116,7 @@ function CarouselSlider() {
                 highly certified IT professionals ready to join your project.
               </p>
               <p>
-                <a href="./Offers/Welcome2020">
-                Check our welcome offers.
-                </a>
+                <a href="./Offers/Welcome2020">Check our welcome offers.</a>
               </p>
             </div>
           </Container>
