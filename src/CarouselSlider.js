@@ -78,7 +78,7 @@ function CarouselSlider() {
                 Azure and Google Cloud, our fully qualified cloud Architects,
                 Developers and DevOps professionals will assess and optimise
                 your infrastructure and applications. We're ready to pick up
-                your cloud environment and manage it for you, so you can focus
+                your cloud environment and manage it for you , so you can focus
                 on your business. Take advantage of our introductory offers
                 starting from £250 per day.*.
               </p>
@@ -108,8 +108,8 @@ function CarouselSlider() {
                 Hire from our of team experts or let us do the hiring for you
               </h5>
               <p>
-                Improve the speed and flexibility of your organisation with on
-                demand talent. Our thorough and sustainable hiring pipeline
+                Improve the speed and flexibility of your organisation with
+                on-demand talent. Our thorough and sustainable hiring pipeline
                 provides the expertise you need, as and when you need them. Make
                 use of our internal team, or hire internationally. All you have
                 to do is define your criteria and we'll provide experienced,
