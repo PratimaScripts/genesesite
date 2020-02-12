@@ -14,11 +14,16 @@ function SalesForm() {
   const [formInput, setFormInput] = useState({
     name: "",
     email_id: "",
+    phone: "",
     location: "",
-    areaOfInterest: "",
-    details: "",
+    areaOfInterest: [],
+    message: "",
     contact_method: ""
   });
+
+  // const [formInputt, setFormInputt] = useState({
+  //   areaOfInterest: []
+  // });
 
   const handleChange = e => {
     setFormInput({
@@ -27,25 +32,105 @@ function SalesForm() {
     });
   };
 
+  // const handleCheckBoxChange = e => {
+  //   const value =
+  //     e.target.type === "checkbox" ? e.target.checked : e.target.value;
+  //   setFormInput({
+  //     ...formInput,
+  //     [e.target.name]: value
+  //   });
+  // };
+
+  // const handleCheck = ({ target }) => {
+  //   const { name: blockName, checked, value } = target; // say we click checkbox "a"
+  //   //console.log(value);
+  //   // at this point, former = { blocka: [], blockb: [], blockc: [] }
+  //   if (checked) {
+  //     formInputt[blockName].push(value); // modifies blocka to become [ "a" ]
+  //   } else {
+  //     const index = formInputt[blockName].indexOf(value);
+  //     formInputt[blockName].splice(index, 1);
+  //   }
+  //   console.log(formInputt);
+
+  //   setFormInputt(formInputt); // new former values override old
+  //   // { blocka: ["a"], blockb: [], blockc: [] }
+  // };
+
+  // const handleCheck = ({ target }) => {
+  //   const { name: blockName, checked, value } = target; 
+  //   // Create a new state object with deep copies
+  //   let newState = {...formInput, Object.keys(formInput).map(val => ([...val])}
+  
+  //   if (checked) {
+  //     // push to new state so you don't mutate original
+  //     newState[blockName].push(value); 
+  //   } else {
+  //     const index = formInputt[blockName].indexOf(value);
+  //     newState[blockName].splice(index, 1);
+  //   }
+  
+  //   setFormInput(newState); 
+  // };
+
+  // const handleCheck = ({ target }) => {
+  //   const { name: blockName, checked, value } = target; 
+  //   setFormInput((prevState) => {
+  //     if (checked) {
+  //        return {...prevState, [blockName]: [...prevState[blockName], value]}
+  //     } else {
+  //        return {
+  //          ...prevState, 
+  //          [blockName]: prevState[blockName].filter(option => option.value != value)}
+  //       }
+  //     })
+  //   };
+
+  const handleCheck = ({ target }) => {
+    const { name: blockName, checked, value } = target;
+    setFormInput((prevState) => {
+      if (prevState[blockName]) {
+        if (checked) {
+          return { ...prevState, [blockName]: [...prevState[blockName], value] }
+        } else {
+          return {
+            ...prevState,
+            [blockName]: prevState[blockName].filter(option => option !== value)
+          }
+        }
+      } else { 
+        if (checked) { 
+          return {
+            ...prevState,
+            [blockName]: [value]
+          }
+        } else {
+          return prevState
+        }
+      }
+    })
+  }
+
   // sales@genesesolution.com, shrawan@genesesolution.com
   const handleSubmit = event => {
     event.preventDefault();
     const form = event.currentTarget;
-    if (
+    if(
       formInput.name !== "" &&
       formInput.email_id !== "" &&
-      formInput.contact_method !== "" && 
+      formInput.phone !== "" &&
+      formInput.contact_method !== "" &&
       formInput.location !== "" &&
       formInput.areaOfInterest !== "" &&
       formInput.message !== ""
-    ) {
+    ){
       let templateParams = {
         from_email: formInput.email_id,
-        to_email: "astute.yard@gmail.com",
-        subject: formInput.subject,
+        to_email: "pratima@genesecloud.academy, astute.yard@gmail.com",
         html: `Sales Inquiry from ${formInput.name}`,
         contact_method: formInput.contact_method,
         name: formInput.name,
+        phone: formInput.phone,
         location: formInput.location,
         areaOfInterest: formInput.areaOfInterest,
         message: formInput.message
@@ -113,15 +198,31 @@ function SalesForm() {
                     <Form.Label>Preferred Contact Method</Form.Label>
                     <InputGroup className="mb-2">
                       <InputGroup.Prepend>
-                        <InputGroup.Radio name="contact_method" />
+                        <InputGroup.Radio
+                          name="contact_method"
+                          value="email_id"
+                          onChange={handleChange}
+                        />
                       </InputGroup.Prepend>
-                      <Form.Control name="email_id" placeholder="Email Address" />
+                      <Form.Control
+                        name="email_id"
+                        placeholder="Email Address"
+                        onChange={handleChange}
+                      />
                     </InputGroup>
                     <InputGroup>
                       <InputGroup.Prepend>
-                        <InputGroup.Radio name="contact_method" />
+                        <InputGroup.Radio
+                          name="contact_method"
+                          value="phone"
+                          onChange={handleChange}
+                        />
                       </InputGroup.Prepend>
-                      <Form.Control placeholder="Phone Number" />
+                      <Form.Control
+                        name="phone"
+                        placeholder="Phone Number"
+                        onChange={handleChange}
+                      />
                     </InputGroup>
                   </Form.Group>
                   <Form.Group>
@@ -194,7 +295,11 @@ function SalesForm() {
                 <Col lg={6}>
                   <Form.Group controlId="formBasicLastname">
                     <Form.Label>Location</Form.Label>
-                    <Form.Control as="select" name="location" onChange={handleChange}>
+                    <Form.Control
+                      as="select"
+                      name="location"
+                      onChange={handleChange}
+                    >
                       <option>Choose a Location</option>
                       <option>UK</option>
                       <option>Australia</option>
@@ -208,22 +313,34 @@ function SalesForm() {
                   </Form.Group>
                   <Form.Group>
                     <Form.Label>Area of Interest</Form.Label>
-                    <Form.Check name="areaOfInterest" label="Dedicated Teams" />
+                    <Form.Check
+                      name="areaOfInterest"
+                      label="Dedicated Teams"
+                      onChange={handleCheck}
+                      value="Dedicated Teams"
+                    />
                     <Form.Check
                       name="areaOfInterest"
                       label="Cloud Expert Advice & Support"
+                      onChange={handleCheck}
+                      value="Cloud Expert Advice & Support"
                     />
                     <Form.Check
                       name="areaOfInterest"
                       label="Software Development"
+                      onChange={handleCheck}
+                      value="Software Development"
                     />
                     <Form.Check
                       name="areaOfInterest"
                       label="Digital Transformation"
+                      onChange={handleCheck}
+                      value="Digital Transformation"
                     />
                   </Form.Group>
                 </Col>
               </Row>
+              
               <Form.Group controlId="formBasicMessage">
                 <Form.Label>Details</Form.Label>
                 <Form.Control

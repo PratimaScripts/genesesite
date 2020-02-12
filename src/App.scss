@@ -94,7 +94,7 @@ h5 {
 
 p {
   margin-bottom: 25px;
-  &:last-child{
+  &:last-child {
     margin: 0;
   }
 }
@@ -143,6 +143,10 @@ a {
         color: #000;
       }
     }
+  }
+
+  .dropdown-menu {
+    margin: 0;
   }
 
   .mega-menu {
