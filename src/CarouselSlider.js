@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import Container from "react-bootstrap/Container";
+import SlideOne from "./carousel-images/digital-transformation-expert.png";
 import SlideTwo from "./carousel-images/cutting-edge-technology.png";
 
 function CarouselSlider() {
@@ -8,8 +9,7 @@ function CarouselSlider() {
     <Carousel interval="30000">
       <Carousel.Item
         style={{
-          backgroundImage:
-            "url(http://dev.genesesolution.com/wp-content/uploads/2018/11/monitoring-1.jpg)"
+          backgroundImage: `url(${SlideOne})`
         }}
       >
         <Carousel.Caption>
