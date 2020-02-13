@@ -8,9 +8,13 @@ import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
 function Navigation() {
-  const [isOpenAbout, setIsOpenAbout] = useState(false);
-  const [isOpenServices, setIsOpenServices] = useState(false);
-  const [isOpenContact, setIsOpenContact] = useState(false);
+  // const [isOpenAbout, setIsOpenAbout] = useState(false);
+  // const [isOpenServices, setIsOpenServices] = useState(false);
+  // const [isOpenContact, setIsOpenContact] = useState(false);
+
+  const [activeDropdown, setActiveDropdown] = useState("");
+
+  const clearActiveDropdown = () => setActiveDropdown("");
 
   return (
     <Navbar bg="white" expand="lg" fixed="top">
@@ -23,15 +27,18 @@ function Navigation() {
           <Nav className="mr-auto">
             <NavDropdown
               title="About"
-              onMouseEnter = { () => setIsOpenAbout(true) }
-              onMouseLeave = { () => setIsOpenAbout(false) }
-              show={ isOpenAbout }
+              // onMouseEnter = { () => setIsOpenAbout(true) }
+              // onMouseLeave = { () => setIsOpenAbout(false) }
+              // show={ isOpenAbout }
+              onMouseEnter={ () => setActiveDropdown("about") }
+              onMouseLeave={ clearActiveDropdown }
+              show={ activeDropdown === "about" }
             >
-              <NavDropdown.Item href="#action/1.1">Who we are</NavDropdown.Item>
-              <NavDropdown.Item href="#action/2.2">
+              <NavDropdown.Item href="#about">Who we are</NavDropdown.Item>
+              <NavDropdown.Item href="#about">
                 How we work
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/2.2">
+              <NavDropdown.Item href="#about">
                 Certifications
               </NavDropdown.Item>
             </NavDropdown>
@@ -109,9 +116,12 @@ function Navigation() {
             </NavDropdown> */}
             <NavDropdown
               title="Services"
-              onMouseEnter = { () => setIsOpenServices(true) }
-              onMouseLeave = { () => setIsOpenServices(false) }
-              show={ isOpenServices }
+              // onMouseEnter = { () => setIsOpenServices(true) }
+              // onMouseLeave = { () => setIsOpenServices(false) }
+              // show={ isOpenServices }
+              onMouseEnter={ () => setActiveDropdown("services") }
+              onMouseLeave={ clearActiveDropdown }
+              show={ activeDropdown === "services" }
             >
               <NavDropdown.Item href="#action/2.1">
                 Cloud Digital Transformation
@@ -129,15 +139,23 @@ function Navigation() {
             <Nav.Link href="https://www.genesecloud.academy/" target="_blank">
               Cloud Academy
             </Nav.Link>
-            <NavDropdown
+            {/* <NavDropdown
               title="Contact"
-              onMouseEnter={() => setIsOpenContact(true)}
-              onMouseLeave={() => setIsOpenContact(false)}
-              show={isOpenContact}
+              // onMouseEnter={() => setIsOpenContact(true)}
+              // onMouseLeave={() => setIsOpenContact(false)}
+              // show={isOpenContact}
+              onMouseEnter={ () => setActiveDropdown("contact") }
+              onMouseLeave={ clearActiveDropdown }
+              show={ activeDropdown === "contact" }
             >
               <NavDropdown.Item href="#sales">Sales</NavDropdown.Item>
               <NavDropdown.Item href="#support">Support</NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
+
+            <Nav.Link href="#contact">
+              Contact
+            </Nav.Link>
+
           </Nav>
         </Navbar.Collapse>
       </Container>

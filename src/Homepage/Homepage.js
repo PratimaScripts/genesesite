@@ -57,16 +57,16 @@ function Homepage() {
             <Col lg={8}>
               <h3>Our Partners</h3>
               <div className="d-flex justify-content-center align-items-center">
-                <div class="flex-fill">
+                <div className="flex-fill">
                   <img src={AwsLogo} alt="AWS Logo"></img>
                 </div>
-                <div class="flex-fill">
+                <div className="flex-fill">
                   <img src={AzureLogo} alt="Azure Logo"></img>
                 </div>
-                <div class="flex-fill">
+                <div className="flex-fill">
                   <img src={GoogleCloudLogo} alt="Google Cloud Logo"></img>
                 </div>
-                <div class="flex-fill">
+                <div className="flex-fill">
                   <img src={AtlassianLogo} alt="Atlassian Logo"></img>
                 </div>
               </div>
