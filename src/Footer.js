@@ -10,6 +10,7 @@ import GoogleCloudWhite from "./Homepage/partner-logos/google-cloud-white.png";
 import AtlassianWhite from "./Homepage/partner-logos/atlassian-white.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookSquare, faInstagramSquare, faLinkedin, faTwitterSquare } from "@fortawesome/free-brands-svg-icons";
+import { HashLink as Link } from 'react-router-hash-link';
 
 function Footer() {
   return (
@@ -32,10 +33,10 @@ function Footer() {
                   <h5>Quick Links</h5>
                   <ul>
                     <li>
-                      <a href="/#">About Us</a>
+                      <a href="#about">About Us</a>
                     </li>
                     <li>
-                      <a href="/#">How we Work</a>
+                      <a href="#about">How we Work</a>
                     </li>
                   </ul>
                 </Col>
