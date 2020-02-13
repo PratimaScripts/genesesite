@@ -288,7 +288,7 @@ function ContactForm() {
                 <Col lg={6}>
                   <Form.Group controlId="formBasicLastname">
                     <Form.Label>Location</Form.Label>
-                    <Form.Control
+                    {/* <Form.Control
                       as="select"
                       name="location"
                       onChange={handleChange}
@@ -300,7 +300,7 @@ function ContactForm() {
                       <option>USA</option>
                       <option>Nepal</option>
                       <option>India</option>
-                    </Form.Control>
+                    </Form.Control> */}
 
                     <CountryDropdown value={country} onChange={selectCountry} />
 
