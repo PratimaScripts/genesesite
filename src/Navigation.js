@@ -24,7 +24,7 @@ function Navigation() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ml-auto">
+          <Nav className="mr-auto">
             <NavDropdown
               title="About"
               // onMouseEnter = { () => setIsOpenAbout(true) }
