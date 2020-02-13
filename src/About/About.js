@@ -75,7 +75,7 @@ export default function About() {
               <h5>Caroline Dantas</h5>
               <p>CEO</p>
               <ul className="social-icons">
-                <li class="linkedin">
+                <li className="linkedin">
                   <a
                     href="https://www.linkedin.com/company/genese-software-solution/"
                     target="_blank"
@@ -92,7 +92,7 @@ export default function About() {
                 CTO and founder of Genese Cloud Academy and Girls In Tech Nepal
               </p>
               <ul className="social-icons">
-                <li class="linkedin">
+                <li className="linkedin">
                   <a
                     href="https://www.linkedin.com/company/genese-software-solution/"
                     target="_blank"
@@ -165,41 +165,41 @@ export default function About() {
             <Col lg={12} className="mb-5">
               <h3>Our Partners</h3>
               <div className="d-flex justify-content-center align-items-center">
-                <div class="flex-fill">
+                <div className="flex-fill">
                   <img src={AwsLogo} alt="AWS Logo"></img>
                 </div>
-                <div class="flex-fill">
+                <div className="flex-fill">
                   <img src={AzureLogo} alt="Azure Logo"></img>
                 </div>
-                <div class="flex-fill">
+                <div className="flex-fill">
                   <img src={GoogleCloudLogo} alt="Google Cloud Logo"></img>
                 </div>
-                <div class="flex-fill">
+                <div className="flex-fill">
                   <img src={AtlassianLogo} alt="Atlassian Logo"></img>
                 </div>
-                <div class="flex-fill">
+                <div className="flex-fill">
                   <img src={NagiosLogo} alt="Nagios Logo"></img>
                 </div>
               </div>
             </Col>
             <Col lg={12}>
-              <div className="d-flex justify-content-center align-items-center">
-                <div class="flex-fill">
+              <div classNameName="d-flex justify-content-center align-items-center">
+                <div className="flex-fill">
                   <img src={VmwareLogo} alt="Vmware Logo"></img>
                 </div>
-                <div class="flex-fill">
+                <div className="flex-fill">
                   <img src={AlibabaGroupLogo} alt="Alibaba Group Logo"></img>
                 </div>
-                <div class="flex-fill">
+                <div className="flex-fill">
                   <img src={Neo4jLogo} alt="Neo4j Logo"></img>
                 </div>
-                <div class="flex-fill">
+                <div className="flex-fill">
                   <img src={BarracudaLogo} alt="Barracuda Logo"></img>
                 </div>
-                <div class="flex-fill">
+                <div className="flex-fill">
                   <img src={TrendMicroLogo} alt="Trend Micro Logo"></img>
                 </div>
-                <div class="flex-fill">
+                <div className="flex-fill">
                   <img src={SpotinstLogo} alt="Spotinst Logo"></img>
                 </div>
               </div>
