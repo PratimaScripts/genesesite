@@ -183,7 +183,7 @@ export default function About() {
               </div>
             </Col>
             <Col lg={12}>
-              <div classNameName="d-flex justify-content-center align-items-center">
+              <div className="d-flex justify-content-center align-items-center">
                 <div className="flex-fill">
                   <img src={VmwareLogo} alt="Vmware Logo"></img>
                 </div>
