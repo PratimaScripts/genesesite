@@ -12,16 +12,15 @@ function App() {
       <header className="App-header">
         <Navigation />
       </header>
-     
-      <div id="main-content">
-        <HashRouter>
+      <HashRouter>
+        <div id="main-content">
           <Switch>
             <Route exact path="/" component={Homepage} />
             <Route path="/contact" component={ContactForm} />
           </Switch>
-        </HashRouter>
-      </div>
-      <Footer />
+        </div>
+        <Footer />
+      </HashRouter>
     </div>
   );
 }
