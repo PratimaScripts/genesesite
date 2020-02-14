@@ -6,6 +6,7 @@ import Container from "react-bootstrap/Container";
 // import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { HashLink as Link } from "react-router-hash-link";
 
 function Navigation() {
   // const [isOpenAbout, setIsOpenAbout] = useState(false);
@@ -30,19 +31,21 @@ function Navigation() {
               // onMouseEnter = { () => setIsOpenAbout(true) }
               // onMouseLeave = { () => setIsOpenAbout(false) }
               // show={ isOpenAbout }
-              onMouseEnter={ () => setActiveDropdown("about") }
-              onMouseLeave={ clearActiveDropdown }
-              show={ activeDropdown === "about" }
+              onMouseEnter={() => setActiveDropdown("about")}
+              onMouseLeave={clearActiveDropdown}
+              show={activeDropdown === "about"}
             >
-              <NavDropdown.Item href="#who_we_are">Who we are</NavDropdown.Item>
-              <NavDropdown.Item href="#how_we_work">
-                How we work
+              <NavDropdown.Item>
+                <Link to="/about#about">Who we are</Link>
               </NavDropdown.Item>
-              <NavDropdown.Item href="#certifications">
-                Certifications
+              <NavDropdown.Item>
+                <Link to="/about#how_we_work">How we Work</Link>
               </NavDropdown.Item>
-              <NavDropdown.Item href="#partners">
-                Partners
+              <NavDropdown.Item>
+                <Link to="/about#certifications">Certifications</Link>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+                <Link to="/about#partners">Partners</Link>
               </NavDropdown.Item>
             </NavDropdown>
             {/* <NavDropdown title="Products" className="mega-menu">
@@ -122,9 +125,9 @@ function Navigation() {
               // onMouseEnter = { () => setIsOpenServices(true) }
               // onMouseLeave = { () => setIsOpenServices(false) }
               // show={ isOpenServices }
-              onMouseEnter={ () => setActiveDropdown("services") }
-              onMouseLeave={ clearActiveDropdown }
-              show={ activeDropdown === "services" }
+              onMouseEnter={() => setActiveDropdown("services")}
+              onMouseLeave={clearActiveDropdown}
+              show={activeDropdown === "services"}
             >
               <NavDropdown.Item href="#action/2.1">
                 Cloud Digital Transformation
@@ -155,10 +158,7 @@ function Navigation() {
               <NavDropdown.Item href="#support">Support</NavDropdown.Item>
             </NavDropdown> */}
 
-            <Nav.Link href="#contact">
-              Contact
-            </Nav.Link>
-
+            <Nav.Link href="#contact">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
