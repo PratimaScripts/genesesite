@@ -9,11 +9,12 @@ import ContactForm from "./Contact/Contact";
 
 function App() {
   return (
-    <div>
-      <header className="App-header">
-        <Navigation />
-      </header>
-      <HashRouter>
+    <HashRouter>
+      <div>
+        <header className="App-header">
+          <Navigation />
+        </header>
+
         <div id="main-content">
           <Switch>
             <Route exact path="/" component={Homepage} />
@@ -22,8 +23,8 @@ function App() {
           </Switch>
         </div>
         <Footer />
-      </HashRouter>
-    </div>
+      </div>
+    </HashRouter>
   );
 }
 
