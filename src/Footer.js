@@ -10,7 +10,10 @@ import GoogleCloudWhite from "./Homepage/partner-logos/google-cloud-white.png";
 import AtlassianWhite from "./Homepage/partner-logos/atlassian-white.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookSquare, faInstagramSquare, faLinkedin, faTwitterSquare } from "@fortawesome/free-brands-svg-icons";
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { HashLink as Link} from 'react-router-hash-link';
+
+
 
 function Footer() {
   return (
@@ -33,12 +36,13 @@ function Footer() {
                   <h5>Quick Links</h5>
                   <ul>
                     <li>
-                      <Link to="/about/#services">About Us</Link>
+                      <Link to="/#service">About Us</Link>
                     </li>
                     <li>
-                      <Link to="/about/#work">How we Work</Link>
+                      <Link to="/#product">How we Work</Link>
                     </li>
                   </ul>
+                  {/* how to put this in for example homepage now?? just a demo show please /service and /how-we-work doesn't exist for now how to give id?? */}
                 </Col>
                 <Col lg={6}>
                   <h5>Follow us</h5>
