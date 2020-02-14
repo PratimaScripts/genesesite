@@ -36,11 +36,10 @@ function Footer() {
                   <h5>Quick Links</h5>
                   <ul>
                     <li>
-                      <Link to="/#service">About Us</Link>
+                      <Link to="/about#about">About Us</Link>
                     </li>
                     <li>
-                      <Link to="/#product">How we Work</Link>
-
+                      <Link to="/about#how_we_work">How we Work</Link>
                     </li>
                   </ul>
                   {/* how to put this in for example homepage now?? just a demo show please /service and /how-we-work doesn't exist for now how to give id?? */}
