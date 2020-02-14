@@ -34,12 +34,15 @@ function Navigation() {
               onMouseLeave={ clearActiveDropdown }
               show={ activeDropdown === "about" }
             >
-              <NavDropdown.Item href="#about">Who we are</NavDropdown.Item>
-              <NavDropdown.Item href="#about">
+              <NavDropdown.Item href="#who_we_are">Who we are</NavDropdown.Item>
+              <NavDropdown.Item href="#how_we_work">
                 How we work
               </NavDropdown.Item>
-              <NavDropdown.Item href="#about">
+              <NavDropdown.Item href="#certifications">
                 Certifications
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#partners">
+                Partners
               </NavDropdown.Item>
             </NavDropdown>
             {/* <NavDropdown title="Products" className="mega-menu">

@@ -33,7 +33,7 @@ import Microsoft from "./microsoft.png";
 export default function About() {
   return (
     <div>
-      <div className="section bg-primary text-white">
+      <div className="section bg-primary text-white" id="about">
         <h1 className="m-0">About Us</h1>
       </div>
       <div className="section section-sm bg-white">
@@ -174,7 +174,7 @@ export default function About() {
           </Row>
         </Container>
       </div>
-      <div className="section section-sm bg-white">
+      <div className="section section-sm bg-white" id="certifications">
         <Container>
           <h3>Certifications</h3>
           <p>
@@ -305,7 +305,7 @@ export default function About() {
           </div>
         </Container>
       </div>
-      <div className="section section-sm bg-light partners">
+      <div className="section section-sm bg-light partners" id="partners">
         <Container>
           <Row className="justify-content-center">
             <Col lg={12} className="mb-5">

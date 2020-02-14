@@ -33,10 +33,10 @@ function Footer() {
                   <h5>Quick Links</h5>
                   <ul>
                     <li>
-                      <Link to="/about/#services">About Us</Link>
+                      <Link to="/about#who_we_are">About Us</Link>
                     </li>
                     <li>
-                      <Link to="/about/#work">How we Work</Link>
+                      <Link to="/about#how_we_work">How we Work</Link>
                     </li>
                   </ul>
                 </Col>
