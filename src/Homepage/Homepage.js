@@ -74,7 +74,7 @@ function Homepage() {
           </Row>
         </Container>
       </div>
-      <div className="section p-0 bg-light">
+      <div className="section p-0 bg-light" id="product">
         <Container fluid className="p-0">
           <Row className="m-0">
             <Col lg={6} className="p-0">
@@ -129,7 +129,7 @@ function Homepage() {
           </Row>
         </Container>
       </div>
-      <div className="section bg-white">
+      <div className="section bg-white" id="service">
         <Container fluid>
           <h3>Start a project with us</h3>
           <Row className="boxes boxesv2">
