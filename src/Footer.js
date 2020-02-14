@@ -40,6 +40,7 @@ function Footer() {
                     </li>
                     <li>
                       <Link to="/#product">How we Work</Link>
+
                     </li>
                   </ul>
                   {/* how to put this in for example homepage now?? just a demo show please /service and /how-we-work doesn't exist for now how to give id?? */}

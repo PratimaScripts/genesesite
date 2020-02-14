@@ -5,12 +5,7 @@ import Col from "react-bootstrap/Col";
 import CEO from "./caroline.jpg";
 import CTO from "./anjani.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebookSquare,
-  faInstagramSquare,
-  faLinkedin,
-  faTwitterSquare
-} from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import CloudExpert from "../Homepage/images/cloud-expert.svg";
 import AwsLogo from "../Homepage/partner-logos/aws.svg";
 import AzureLogo from "../Homepage/partner-logos/azure.svg";
@@ -23,13 +18,24 @@ import Neo4jLogo from "../Homepage/partner-logos/neo4j.svg";
 import BarracudaLogo from "../Homepage/partner-logos/barracuda.png";
 import TrendMicroLogo from "../Homepage/partner-logos/trend-micro.svg";
 import SpotinstLogo from "../Homepage/partner-logos/spotinst.png";
+import DeveloperAssociate from "./developer-associate.png";
+import DevopsEngineerProfessional from "./devops-engineer-professional.png";
+import SecuritySpecialty from "./security-specialty.png";
+import SolutionArchitectProfessional from "./solution-architect-professional.png";
+import SysopsAdministratorAssociate from "./sysops-administrator-associate.png";
+import ProfessionalCloudArchitect from "./Professional-Cloud-Architect.png";
+import ProfessionalDataEngineer from "./Professional-Data-Engineer.png";
+import CiscoCcnaLogo from "./cisco-ccna-logo.png";
+import RedHat from "./red-hat.png";
+import Nagios from "./nagios.png";
+import Microsoft from "./microsoft.png";
 
 export default function About() {
   return (
     <div>
-        <div className="section bg-primary text-white">
+      <div className="section bg-primary text-white" id="about">
         <h1 className="m-0">About Us</h1>
-        </div>
+      </div>
       <div className="section section-sm bg-white">
         <Container>
           <h3>Who we are</h3>
@@ -70,13 +76,18 @@ export default function About() {
           </p>
           <Row className="justify-content-md-center team">
             <Col lg={6}>
-              <img src={CEO} alt="Caroline"></img>
+              <a
+                href="https://www.linkedin.com/in/a-caroline-dantas-86754712/"
+                target="_blank"
+              >
+                <img src={CEO} alt="Caroline"></img>
+              </a>
               <h5>Caroline Dantas</h5>
               <p>CEO</p>
               <ul className="social-icons">
                 <li className="linkedin">
                   <a
-                    href="https://www.linkedin.com/company/genese-software-solution/"
+                    href="https://www.linkedin.com/in/a-caroline-dantas-86754712/"
                     target="_blank"
                   >
                     <FontAwesomeIcon icon={faLinkedin} />
@@ -85,7 +96,12 @@ export default function About() {
               </ul>
             </Col>
             <Col lg={6}>
-              <img src={CTO} alt="Anjani"></img>
+              <a
+                href="https://www.linkedin.com/in/anjaniphuyal/"
+                target="_blank"
+              >
+                <img src={CTO} alt="Anjani"></img>
+              </a>
               <h5>Anjani Phuyal</h5>
               <p>
                 CTO and founder of Genese Cloud Academy and Girls In Tech Nepal
@@ -93,7 +109,7 @@ export default function About() {
               <ul className="social-icons">
                 <li className="linkedin">
                   <a
-                    href="https://www.linkedin.com/company/genese-software-solution/"
+                    href="https://www.linkedin.com/in/anjaniphuyal/"
                     target="_blank"
                   >
                     <FontAwesomeIcon icon={faLinkedin} />
@@ -158,7 +174,138 @@ export default function About() {
           </Row>
         </Container>
       </div>
-      <div className="section section-sm bg-white partners">
+      <div className="section section-sm bg-white" id="certifications">
+        <Container>
+          <h3>Certifications</h3>
+          <p>
+            With over 200 technical certifications, we provide our clients with
+            the highest levels of expertise and experience. We partner
+            exclusively with best-of-breed technology providers to deliver a
+            wide range of solutions for every business need.
+          </p>
+          <div className="certification-list">
+            <h4>Amazon Web Services</h4>
+            {/* <p>
+              We help learners grow their cloud skills and confidence by
+              providing various AWS cloud materials.
+            </p> */}
+            <Row className="justify-content-center text-left">
+              <Col lg={4}>
+                <div className="certificate">
+                  <img src={DeveloperAssociate}></img>
+                  <p>AWS Certified Developer - Associate</p>
+                </div>
+              </Col>
+              <Col lg={4}>
+                <div className="certificate">
+                  <img src={SecuritySpecialty}></img>
+                  <p>AWS Security specialist</p>
+                </div>
+              </Col>
+              <Col lg={4}>
+                <div className="certificate">
+                  <img src={SysopsAdministratorAssociate}></img>
+                  <p>AWS SysOps Administrator associate</p>
+                </div>
+              </Col>
+              <Col lg={4}>
+                <div className="certificate">
+                  <img src={SolutionArchitectProfessional}></img>
+                  <p>AWS Solutions architect professional</p>
+                </div>
+              </Col>
+              <Col lg={4}>
+                <div className="certificate">
+                  <img src={DevopsEngineerProfessional}></img>
+                  <p>AWS DevOps engineer professional</p>
+                </div>
+              </Col>
+            </Row>
+          </div>
+          <div className="certification-list">
+            <h4>Microsoft</h4>
+            {/* <p>
+              We help learners grow their cloud skills and confidence by
+              providing various AWS cloud materials.
+            </p> */}
+            <Row className="justify-content-center text-left">
+              <Col lg={4}>
+                <div className="certificate">
+                  <img src={Microsoft}></img>
+                  <p>Microsoft Professional</p>
+                </div>
+              </Col>
+              <Col lg={4}>
+                <div className="certificate">
+                  <img src={Microsoft}></img>
+                  <p>Microsoft IT Professional</p>
+                </div>
+              </Col>
+              <Col lg={4}>
+                <div className="certificate">
+                  <img src={Microsoft}></img>
+                  <p>Microsoft Systems Engineer</p>
+                </div>
+              </Col>
+            </Row>
+          </div>
+          <div className="certification-list">
+            <h4>Google Cloud</h4>
+            {/* <p>
+              We help learners grow their cloud skills and confidence by
+              providing various AWS cloud materials.
+            </p> */}
+            <Row className="justify-content-center text-left">
+              <Col lg={4}>
+                <div className="certificate">
+                  <img src={ProfessionalDataEngineer}></img>
+                  <p>Google Cloud Professional Data Engineer</p>
+                </div>
+              </Col>
+              <Col lg={4}>
+                <div className="certificate">
+                  <img src={ProfessionalCloudArchitect}></img>
+                  <p>Google Cloud Architect</p>
+                </div>
+              </Col>
+            </Row>
+          </div>
+          <div className="certification-list">
+            <h4>Other Certifications</h4>
+            {/* <p>
+              We help learners grow their cloud skills and confidence by
+              providing various AWS cloud materials.
+            </p> */}
+            <Row className="justify-content-center text-left">
+              <Col lg={4}>
+                <div className="certificate">
+                  <img src={Nagios}></img>
+                  <p>Nagios Administrator</p>
+                </div>
+              </Col>
+              <Col lg={4}>
+                <div className="certificate">
+                  <img src={CiscoCcnaLogo}></img>
+                  <p>Cisco CCNA</p>
+                </div>
+              </Col>
+              <Col lg={4}>
+                <div className="certificate">
+                  <img src={RedHat}></img>
+                  <p>Red Hat Engineer</p>
+                </div>
+              </Col>
+              <Col lg={4}>
+                <div className="certificate">
+                  <img src={RedHat}></img>
+                  <p>Redhat System admin</p>
+                </div>
+              </Col>
+            </Row>
+          </div>
+        </Container>
+      </div>
+      <div className="section section-sm bg-light partners" id="partners">
         <Container>
           <Row className="justify-content-center">
             <Col lg={12} className="mb-5">
@@ -177,14 +324,14 @@ export default function About() {
                   <img src={AtlassianLogo} alt="Atlassian Logo"></img>
                 </div>
                 <div className="flex-fill">
-                  <img src={NagiosLogo} alt="Nagios Logo"></img>
+                  <img src={VmwareLogo} alt="Vmware Logo"></img>
                 </div>
               </div>
             </Col>
             <Col lg={12}>
               <div className="d-flex justify-content-center align-items-center">
                 <div className="flex-fill">
-                  <img src={VmwareLogo} alt="Vmware Logo"></img>
+                  <img src={SpotinstLogo} alt="Spotinst Logo"></img>
                 </div>
                 <div className="flex-fill">
                   <img src={AlibabaGroupLogo} alt="Alibaba Group Logo"></img>
@@ -199,7 +346,7 @@ export default function About() {
                   <img src={TrendMicroLogo} alt="Trend Micro Logo"></img>
                 </div>
                 <div className="flex-fill">
-                  <img src={SpotinstLogo} alt="Spotinst Logo"></img>
+                  <img src={NagiosLogo} alt="Nagios Logo"></img>
                 </div>
               </div>
             </Col>
