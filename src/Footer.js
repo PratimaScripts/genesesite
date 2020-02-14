@@ -42,7 +42,6 @@ function Footer() {
                       <Link to="/about#how_we_work">How we Work</Link>
                     </li>
                   </ul>
-                  {/* how to put this in for example homepage now?? just a demo show please /service and /how-we-work doesn't exist for now how to give id?? */}
                 </Col>
                 <Col lg={6}>
                   <h5>Follow us</h5>
