@@ -46,16 +46,16 @@ function Footer() {
                 <Col lg={6}>
                   <h5>Follow us</h5>
                   <ul className="social-icons">
-                    <li class="facebook">
+                    <li className="facebook">
                       <a href="https://www.facebook.com/genesesofts/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebookSquare} /></a>
                     </li>
-                    <li class="linkedin">
+                    <li className="linkedin">
                       <a href="https://www.linkedin.com/company/genese-software-solution/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a>
                     </li>
-                    <li class="twitter">
+                    <li className="twitter">
                       <a href="https://www.twitter.com/genesesofts/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTwitterSquare} /></a>
                     </li>
-                    <li class="instagram">
+                    <li className="instagram">
                       <a href="https://www.instagram.com/genesesoftsol/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagramSquare} /></a>
                     </li>
                   </ul>
