@@ -79,6 +79,7 @@ export default function About() {
               <a
                 href="https://www.linkedin.com/in/a-caroline-dantas-86754712/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <img src={CEO} alt="Caroline"></img>
               </a>
@@ -89,6 +90,7 @@ export default function About() {
                   <a
                     href="https://www.linkedin.com/in/a-caroline-dantas-86754712/"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <FontAwesomeIcon icon={faLinkedin} />
                   </a>
@@ -99,6 +101,7 @@ export default function About() {
               <a
                 href="https://www.linkedin.com/in/anjaniphuyal/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <img src={CTO} alt="Anjani"></img>
               </a>
@@ -111,6 +114,7 @@ export default function About() {
                   <a
                     href="https://www.linkedin.com/in/anjaniphuyal/"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <FontAwesomeIcon icon={faLinkedin} />
                   </a>
@@ -192,31 +196,31 @@ export default function About() {
             <Row className="justify-content-center text-left">
               <Col lg={4}>
                 <div className="certificate">
-                  <img src={DeveloperAssociate}></img>
+                  <img src={DeveloperAssociate} alt=""></img>
                   <p>AWS Certified Developer - Associate</p>
                 </div>
               </Col>
               <Col lg={4}>
                 <div className="certificate">
-                  <img src={SecuritySpecialty}></img>
+                  <img src={SecuritySpecialty} alt=""></img>
                   <p>AWS Security specialist</p>
                 </div>
               </Col>
               <Col lg={4}>
                 <div className="certificate">
-                  <img src={SysopsAdministratorAssociate}></img>
+                  <img src={SysopsAdministratorAssociate} alt=""></img>
                   <p>AWS SysOps Administrator associate</p>
                 </div>
               </Col>
               <Col lg={4}>
                 <div className="certificate">
-                  <img src={SolutionArchitectProfessional}></img>
+                  <img src={SolutionArchitectProfessional} alt=""></img>
                   <p>AWS Solutions architect professional</p>
                 </div>
               </Col>
               <Col lg={4}>
                 <div className="certificate">
-                  <img src={DevopsEngineerProfessional}></img>
+                  <img src={DevopsEngineerProfessional} alt=""></img>
                   <p>AWS DevOps engineer professional</p>
                 </div>
               </Col>
@@ -231,19 +235,19 @@ export default function About() {
             <Row className="justify-content-center text-left">
               <Col lg={4}>
                 <div className="certificate">
-                  <img src={Microsoft}></img>
+                  <img src={Microsoft} alt=""></img>
                   <p>Microsoft Professional</p>
                 </div>
               </Col>
               <Col lg={4}>
                 <div className="certificate">
-                  <img src={Microsoft}></img>
+                  <img src={Microsoft} alt=""></img>
                   <p>Microsoft IT Professional</p>
                 </div>
               </Col>
               <Col lg={4}>
                 <div className="certificate">
-                  <img src={Microsoft}></img>
+                  <img src={Microsoft} alt=""></img>
                   <p>Microsoft Systems Engineer</p>
                 </div>
               </Col>
@@ -258,13 +262,13 @@ export default function About() {
             <Row className="justify-content-center text-left">
               <Col lg={4}>
                 <div className="certificate">
-                  <img src={ProfessionalDataEngineer}></img>
+                  <img src={ProfessionalDataEngineer} alt=""></img>
                   <p>Google Cloud Professional Data Engineer</p>
                 </div>
               </Col>
               <Col lg={4}>
                 <div className="certificate">
-                  <img src={ProfessionalCloudArchitect}></img>
+                  <img src={ProfessionalCloudArchitect} alt=""></img>
                   <p>Google Cloud Architect</p>
                 </div>
               </Col>
@@ -279,25 +283,25 @@ export default function About() {
             <Row className="justify-content-center text-left">
               <Col lg={4}>
                 <div className="certificate">
-                  <img src={Nagios}></img>
+                  <img src={Nagios} alt=""></img>
                   <p>Nagios Administrator</p>
                 </div>
               </Col>
               <Col lg={4}>
                 <div className="certificate">
-                  <img src={CiscoCcnaLogo}></img>
+                  <img src={CiscoCcnaLogo} alt=""></img>
                   <p>Cisco CCNA</p>
                 </div>
               </Col>
               <Col lg={4}>
                 <div className="certificate">
-                  <img src={RedHat}></img>
+                  <img src={RedHat} alt=""></img>
                   <p>Red Hat Engineer</p>
                 </div>
               </Col>
               <Col lg={4}>
                 <div className="certificate">
-                  <img src={RedHat}></img>
+                  <img src={RedHat} alt=""></img>
                   <p>Redhat System admin</p>
                 </div>
               </Col>
