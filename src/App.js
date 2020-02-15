@@ -5,7 +5,7 @@ import Homepage from "./Homepage/Homepage";
 import Footer from "./Footer";
 import { HashRouter, Switch, Route } from "react-router-dom";
 import About from "./About/About";
-import ContactForm from "./Contact/Contact";
+import ContactForm from "./Contact/ContactForm";
 
 function App() {
   return (
