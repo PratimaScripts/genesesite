@@ -258,7 +258,7 @@ export default function ContactForm() {
                                 <Col lg={6}>
                                     <Form.Group>
                                         <Form.Label>Location</Form.Label>
-                                        <CountryDropdown value={formInput.location} onChange={selectCountry}/>
+                                        <CountryDropdown className="form-control" value={formInput.location} onChange={selectCountry}/>
                                     </Form.Group>
 
                                     <Form.Group>

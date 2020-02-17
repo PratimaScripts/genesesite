@@ -133,82 +133,72 @@ function Homepage() {
         <Container fluid>
           <h3>Start a project with us</h3>
           <Row className="boxes boxesv2">
-            <Col lg={4}>
+            <Col lg={2}>
               <Card>
                 <Card.Body>
                   <div className="icon">
                     <FontAwesomeIcon icon={faUserFriends} />
                   </div>
-                  <p>We focus on the customer.</p>
+                  <p>Our focus is the customer. By understanding your needs and expectations we work with you to provide a solution which best serves your business.</p>
                 </Card.Body>
               </Card>
             </Col>
-            <Col lg={4}>
+            <Col lg={2}>
               <Card>
                 <Card.Body>
                   <div className="icon">
                     <FontAwesomeIcon icon={faRocket} />
                   </div>
                   <p>
-                    Our loyal and experienced team can streamline and enhance
-                    the operational efficiency of your business through faster
-                    and more resilient development.
+                  Our loyal and experienced team can streamline and enhance the operational efficiency of your business through faster and more resilient development.
                   </p>
                 </Card.Body>
               </Card>
             </Col>
-            <Col lg={4}>
+            <Col lg={2}>
               <Card>
                 <Card.Body>
                   <div className="icon">
                     <FontAwesomeIcon icon={faMagic} />
                   </div>
                   <p>
-                    We are test-oriented, utilising test automation to build and
-                    assure quality into every product.
+                  We are test-oriented, utilising test automation to build and assure quality into every product. By identifying errors quicker, we reduce the time and cost of development.
                   </p>
                 </Card.Body>
               </Card>
             </Col>
-            <Col lg={4}>
+            <Col lg={2}>
               <Card>
                 <Card.Body>
                   <div className="icon">
                     <FontAwesomeIcon icon={faThumbsUp} />
                   </div>
                   <p>
-                    You can scale your IT resources on-demand, reliably and
-                    securely according to your project needs.
+                  You can scale your IT resources on-demand, reliably and securely according to your project needs.
                   </p>
                 </Card.Body>
               </Card>
             </Col>
-            <Col lg={4}>
+            <Col lg={2}>
               <Card>
                 <Card.Body>
                   <div className="icon">
                     <FontAwesomeIcon icon={faServer} />
                   </div>
                   <p>
-                    We'll advise on, provision and manage your cloud
-                    infrastructure, reducing cost and improving security and
-                    compliance.
+                  As cloud security experts, we'll advise on, provision and manage your cloud infrastructure, reducing cost and improving security and compliance.
                   </p>
                 </Card.Body>
               </Card>
             </Col>
-            <Col lg={4}>
+            <Col lg={2}>
               <Card>
                 <Card.Body>
                   <div className="icon">
                     <FontAwesomeIcon icon={faShieldAlt} />
                   </div>
                   <p>
-                    As cloud and security specialists we'll help you migrate
-                    your services to the cloud and integrate enterprise services
-                    seamlessly and securely. Using cloud managed services you
-                    can reduce capital or operational expense, accelerate
-                    time-to-business-value and improve on ROI.
+                  We ensure your transition to the cloud is seamless. Using cloud managed services you can reduce capital or operational expense, accelerate time-to-business-value and improve on ROI.
                   </p>
                 </Card.Body>
               </Card>

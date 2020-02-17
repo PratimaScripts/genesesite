@@ -141,12 +141,23 @@ a {
     .navbar-nav {
       .nav-link {
         color: #000;
+        &:hover {
+          color: #135a70 !important;
+        }
       }
     }
   }
 
   .dropdown-menu {
     margin: 0;
+    .dropdown-item {
+      a {
+        color: inherit;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
   }
 
   .mega-menu {
@@ -543,4 +554,14 @@ a {
       margin-right: 20px;
     }
   }
+}
+.react-tel-input {
+  flex: 1 1;
+  .form-control {
+    width: 100% !important;
+  }
+}
+.hash-link {
+  position: relative;
+  top: -90px;
 }

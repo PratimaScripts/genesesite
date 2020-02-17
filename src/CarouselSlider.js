@@ -88,7 +88,7 @@ function CarouselSlider() {
                 </a>
               </p>
               <p>
-                * Prices depend on project duration and are subjected to VAT.
+               <small> * Prices depend on project duration and are subjected to VAT.</small>
               </p>
             </div>
           </Container>
