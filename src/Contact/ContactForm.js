@@ -249,6 +249,7 @@ export default function ContactForm() {
                                                 timeIntervals={15}
                                                 timeCaption="time"
                                                 dateFormat="MMMM d, yyyy h:mm aa"
+                                                className="form-control"
                                             />
 
                                         </Form.Group>:""
@@ -359,7 +360,7 @@ export default function ContactForm() {
                         <p className="text-center"><Button className="mb-3 text-center mr-3" onClick={() => reset_modal()}>Yes</Button><Button onClick={()=> setReset(false)} className="mb-3 text-center">Cancel</Button></p>
                     </div>
                 </div>
-            </div> : ""}}
+            </div> : ""}
 
         </Container>
     )
