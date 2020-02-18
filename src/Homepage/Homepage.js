@@ -205,7 +205,7 @@ function Homepage() {
             </Col>
           </Row>
           <p>
-            <a href="#sales">
+            <a href="#/contact">
               Start a project with us, arrange a free consultation here.
             </a>
           </p>
