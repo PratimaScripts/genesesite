@@ -3,6 +3,7 @@ import Carousel from "../CarouselSlider";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { HashLink as Link} from 'react-router-hash-link';
 import AwsLogo from "./partner-logos/aws.svg";
 import AzureLogo from "./partner-logos/azure.svg";
 import GoogleCloudLogo from "./partner-logos/googleCloud.svg";
@@ -279,7 +280,7 @@ function Homepage() {
             </Col>
           </Row>
           <p>
-            <a href="#sales">
+            <a href="#/contact">
               Find out more on how we can help in your industry.
             </a>
           </p>
@@ -332,9 +333,9 @@ function Homepage() {
                   </Col>
                 </Row>
                 <p>
-                  <a href="/#">
+                  <Link to="/about#certifications">
                     View all of our internationally recognised certifications.
-                  </a>
+                  </Link>
                 </p>
               </div>
             </Col>
