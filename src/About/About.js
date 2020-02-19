@@ -32,7 +32,13 @@ import CiscoCcnaLogo from "./cisco-ccna-logo.png";
 import RedHat from "./red-hat.png";
 import Nagios from "./nagios.png";
 import Microsoft from "./microsoft.png";
+import MicrosoftCertifiedITProfessional from "./microsoft-certified-it-professional.png";
 import ScrumMaster from "./scrum.png";
+import TechnologySpecialist from "./technology-specialist.png";
+import RedhatSystemSdmin from "./redhat-system-admin.png";
+import MicrosoftSysAdmin from "./microsoft-sys-admin.png";
+import MicrosoftSysEngineer from "./microsoft-sys-engineer.png";
+import NagiosAdministrator from "./nagios-administrator.png";
 
 export default function About() {
   return (
@@ -260,56 +266,26 @@ export default function About() {
             <Row className="justify-content-center text-left">
               <Col lg={4}>
                 <div className="certificate">
-                  <img src={Microsoft} alt=""></img>
-                  <p>Microsoft Innovative Educator</p>
-                </div>
-              </Col>
-              <Col lg={4}>
-                <div className="certificate">
-                  <img src={Microsoft} alt=""></img>
-                  <p>Microsoft Innovative Educator Trainer</p>
-                </div>
-              </Col>
-              <Col lg={4}>
-                <div className="certificate">
-                  <img src={Microsoft} alt=""></img>
-                  <p>Microsoft Innovative Educator Master</p>
-                </div>
-              </Col>
-              <Col lg={4}>
-                <div className="certificate">
-                  <img src={Microsoft} alt=""></img>
-                  <p>Microsoft Innovative Educator Expert</p>
-                </div>
-              </Col>
-              <Col lg={4}>
-                <div className="certificate">
-                  <img src={Microsoft} alt=""></img>
-                  <p>Microsoft Authorized Education Partner</p>
-                </div>
-              </Col>
-              <Col lg={4}>
-                <div className="certificate">
-                  <img src={Microsoft} alt=""></img>
+                  <img src={MicrosoftSysEngineer} alt=""></img>
                   <p>Microsoft Certified Systems Engineer</p>
                 </div>
               </Col>
               <Col lg={4}>
                 <div className="certificate">
-                  <img src={Microsoft} alt=""></img>
+                  <img src={MicrosoftCertifiedITProfessional} alt=""></img>
                   <p>Microsoft Certified IT Professional</p>
                 </div>
               </Col>
               <Col lg={4}>
                 <div className="certificate">
-                  <img src={Microsoft} alt=""></img>
+                  <img src={TechnologySpecialist} alt=""></img>
                   <p>Microsoft Certified Technology Specialist</p>
                 </div>
               </Col>
               <Col lg={4}>
                 <div className="certificate">
-                  <img src={Microsoft} alt=""></img>
-                  <p>Microsoft Certified System Administrator</p>
+                  <img src={MicrosoftSysAdmin} alt=""></img>
+                  <p>Microsoft Certified Systems Administrator</p>
                 </div>
               </Col>
             </Row>
@@ -344,7 +320,7 @@ export default function About() {
             <Row className="justify-content-center text-left">
               <Col lg={4}>
                 <div className="certificate">
-                  <img src={Nagios} alt=""></img>
+                  <img src={NagiosAdministrator} alt=""></img>
                   <p>Nagios Certified Administrator – Core</p>
                 </div>
               </Col>
@@ -368,14 +344,8 @@ export default function About() {
               </Col>
               <Col lg={4}>
                 <div className="certificate">
-                  <img src={RedHat} alt=""></img>
+                  <img src={RedhatSystemSdmin} alt=""></img>
                   <p>Red Hat Certified System Administrator</p>
-                </div>
-              </Col>
-              <Col lg={4}>
-                <div className="certificate">
-                  <img src={RedHat} alt=""></img>
-                  <p>Redhat System admin</p>
                 </div>
               </Col>
               <Col lg={4}>
