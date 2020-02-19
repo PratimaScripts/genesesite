@@ -121,11 +121,12 @@ export default function ContactForm() {
         ) {
           let templateParams = {
             from_email: formInput.email,
-            to_email: "pratima@genesecloud.academy, astute.yard@gmail.com",
+            to_email: "sales@genesesolution.com, shrawan@genesesolution.com",
             html: `Sales Inquiry from ${formInput.fullname}`,
             contact_method: formInput.contact_method,
             name: formInput.fullname,
             phone: formInput.phone,
+            date: formInput.date,
             location: formInput.location,
             areaOfInterest: formInput.areaOfInterest,
             message: formInput.message
