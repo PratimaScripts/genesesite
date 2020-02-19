@@ -33,7 +33,7 @@ import Microsoft from "./microsoft.png";
 export default function About() {
   return (
     <div>
-      <span className="hash-link" id="about"></span>
+      <span className="hash-link" id="who_we_are"></span>
       <div className="section bg-primary text-white">
         <h1 className="m-0">About Us</h1>
       </div>
