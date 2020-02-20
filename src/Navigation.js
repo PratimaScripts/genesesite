@@ -36,11 +36,11 @@ function Navigation() {
               onMouseLeave={clearActiveDropdown}
               show={activeDropdown === "about"}   
             >
-              <NavDropdown.Item href="#/about#who_we_are">
-                Who we are
+              <NavDropdown.Item>
+                <Link to="/about#who_we_are">Who we are</Link>
               </NavDropdown.Item>
-              <NavDropdown.Item href="#about#how_we_work">
-                How we Work
+              <NavDropdown.Item>
+                <Link to="/about#how_we_work">How we work</Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
                 <Link to="/about#certifications">Certifications</Link>
