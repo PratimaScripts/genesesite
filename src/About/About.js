@@ -19,8 +19,11 @@ import BarracudaLogo from "../Homepage/partner-logos/barracuda.png";
 import TrendMicroLogo from "../Homepage/partner-logos/trend-micro.svg";
 import SpotinstLogo from "../Homepage/partner-logos/spotinst.png";
 import DeveloperAssociate from "./developer-associate.png";
+import SulotionArchitectAssociate from "./solutions-architect-associate.png";
 import DevopsEngineerProfessional from "./devops-engineer-professional.png";
 import SecuritySpecialty from "./security-specialty.png";
+import BigDataSpecialty from "./big-data-specialty.png";
+import MachineLearningSpecialty from "./machine-learning-specialty.png";
 import SolutionArchitectProfessional from "./solution-architect-professional.png";
 import SysopsAdministratorAssociate from "./sysops-administrator-associate.png";
 import ProfessionalCloudArchitect from "./Professional-Cloud-Architect.png";
@@ -29,6 +32,13 @@ import CiscoCcnaLogo from "./cisco-ccna-logo.png";
 import RedHat from "./red-hat.png";
 import Nagios from "./nagios.png";
 import Microsoft from "./microsoft.png";
+import MicrosoftCertifiedITProfessional from "./microsoft-certified-it-professional.png";
+import ScrumMaster from "./scrum.png";
+import TechnologySpecialist from "./technology-specialist.png";
+import RedhatSystemSdmin from "./redhat-system-admin.png";
+import MicrosoftSysAdmin from "./microsoft-sys-admin.png";
+import MicrosoftSysEngineer from "./microsoft-sys-engineer.png";
+import NagiosAdministrator from "./nagios-administrator.png";
 
 export default function About() {
   return (
@@ -205,26 +215,44 @@ export default function About() {
               </Col>
               <Col lg={4}>
                 <div className="certificate">
-                  <img src={SecuritySpecialty} alt=""></img>
-                  <p>AWS Security specialist</p>
-                </div>
-              </Col>
-              <Col lg={4}>
-                <div className="certificate">
-                  <img src={SysopsAdministratorAssociate} alt=""></img>
-                  <p>AWS SysOps Administrator associate</p>
+                  <img src={SulotionArchitectAssociate} alt=""></img>
+                  <p>AWS Certified Solutions Architect - Associate</p>
                 </div>
               </Col>
               <Col lg={4}>
                 <div className="certificate">
                   <img src={SolutionArchitectProfessional} alt=""></img>
-                  <p>AWS Solutions architect professional</p>
+                  <p>AWS Solutions Architect - Professional</p>
+                </div>
+              </Col>
+              <Col lg={4}>
+                <div className="certificate">
+                  <img src={SecuritySpecialty} alt=""></img>
+                  <p>AWS Security Specialist</p>
+                </div>
+              </Col>
+              <Col lg={4}>
+                <div className="certificate">
+                  <img src={SysopsAdministratorAssociate} alt=""></img>
+                  <p>AWS SysOps Administrator - Associate</p>
                 </div>
               </Col>
               <Col lg={4}>
                 <div className="certificate">
                   <img src={DevopsEngineerProfessional} alt=""></img>
-                  <p>AWS DevOps engineer professional</p>
+                  <p>AWS DevOps Engineer - Professional</p>
+                </div>
+              </Col>
+              <Col lg={4}>
+                <div className="certificate">
+                  <img src={BigDataSpecialty} alt=""></img>
+                  <p>AWS Certified Big Data - Specialty</p>
+                </div>
+              </Col>
+              <Col lg={4}>
+                <div className="certificate">
+                  <img src={MachineLearningSpecialty} alt=""></img>
+                  <p>AWS Certified Machine Learning – Specialty</p>
                 </div>
               </Col>
             </Row>
@@ -238,20 +266,26 @@ export default function About() {
             <Row className="justify-content-center text-left">
               <Col lg={4}>
                 <div className="certificate">
-                  <img src={Microsoft} alt=""></img>
-                  <p>Microsoft Professional</p>
+                  <img src={MicrosoftSysEngineer} alt=""></img>
+                  <p>Microsoft Certified Systems Engineer</p>
                 </div>
               </Col>
               <Col lg={4}>
                 <div className="certificate">
-                  <img src={Microsoft} alt=""></img>
-                  <p>Microsoft IT Professional</p>
+                  <img src={MicrosoftCertifiedITProfessional} alt=""></img>
+                  <p>Microsoft Certified IT Professional</p>
                 </div>
               </Col>
               <Col lg={4}>
                 <div className="certificate">
-                  <img src={Microsoft} alt=""></img>
-                  <p>Microsoft Systems Engineer</p>
+                  <img src={TechnologySpecialist} alt=""></img>
+                  <p>Microsoft Certified Technology Specialist</p>
+                </div>
+              </Col>
+              <Col lg={4}>
+                <div className="certificate">
+                  <img src={MicrosoftSysAdmin} alt=""></img>
+                  <p>Microsoft Certified Systems Administrator</p>
                 </div>
               </Col>
             </Row>
@@ -265,14 +299,14 @@ export default function About() {
             <Row className="justify-content-center text-left">
               <Col lg={4}>
                 <div className="certificate">
-                  <img src={ProfessionalDataEngineer} alt=""></img>
-                  <p>Google Cloud Professional Data Engineer</p>
+                  <img src={ProfessionalCloudArchitect} alt=""></img>
+                  <p>Google Cloud Certified Professional Solution Architect</p>
                 </div>
               </Col>
               <Col lg={4}>
                 <div className="certificate">
-                  <img src={ProfessionalCloudArchitect} alt=""></img>
-                  <p>Google Cloud Architect</p>
+                  <img src={ProfessionalDataEngineer} alt=""></img>
+                  <p>Google Cloud Professional Data Engineer</p>
                 </div>
               </Col>
             </Row>
@@ -286,26 +320,38 @@ export default function About() {
             <Row className="justify-content-center text-left">
               <Col lg={4}>
                 <div className="certificate">
+                  <img src={NagiosAdministrator} alt=""></img>
+                  <p>Nagios Certified Administrator – Core</p>
+                </div>
+              </Col>
+              <Col lg={4}>
+                <div className="certificate">
                   <img src={Nagios} alt=""></img>
-                  <p>Nagios Administrator</p>
+                  <p>Nagios Certified Professional – Core</p>
                 </div>
               </Col>
               <Col lg={4}>
                 <div className="certificate">
                   <img src={CiscoCcnaLogo} alt=""></img>
-                  <p>Cisco CCNA</p>
+                  <p>Cisco Certified Network Associate</p>
                 </div>
               </Col>
               <Col lg={4}>
                 <div className="certificate">
                   <img src={RedHat} alt=""></img>
-                  <p>Red Hat Engineer</p>
+                  <p>Red Hat Certified Engineer</p>
                 </div>
               </Col>
               <Col lg={4}>
                 <div className="certificate">
-                  <img src={RedHat} alt=""></img>
-                  <p>Redhat System admin</p>
+                  <img src={RedhatSystemSdmin} alt=""></img>
+                  <p>Red Hat Certified System Administrator</p>
+                </div>
+              </Col>
+              <Col lg={4}>
+                <div className="certificate">
+                  <img src={ScrumMaster} alt=""></img>
+                  <p>Certified Scrum Master</p>
                 </div>
               </Col>
             </Row>

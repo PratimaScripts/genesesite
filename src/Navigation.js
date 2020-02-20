@@ -7,6 +7,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { HashLink as Link } from "react-router-hash-link";
+import {NavLink} from "react-router-dom"; 
 
 function Navigation() {
   // const [isOpenAbout, setIsOpenAbout] = useState(false);
@@ -33,13 +34,13 @@ function Navigation() {
               // show={ isOpenAbout }
               onMouseEnter={() => setActiveDropdown("about")}
               onMouseLeave={clearActiveDropdown}
-              show={activeDropdown === "about"}
+              show={activeDropdown === "about"}   
             >
-              <NavDropdown.Item>
-                <Link to="/about#about">Who we are</Link>
+              <NavDropdown.Item href="#/about#who_we_are">
+                Who we are
               </NavDropdown.Item>
-              <NavDropdown.Item>
-                <Link to="/about#how_we_work">How we Work</Link>
+              <NavDropdown.Item href="#about#how_we_work">
+                How we Work
               </NavDropdown.Item>
               <NavDropdown.Item>
                 <Link to="/about#certifications">Certifications</Link>
@@ -158,7 +159,7 @@ function Navigation() {
               <NavDropdown.Item href="#support">Support</NavDropdown.Item>
             </NavDropdown> */}
 
-            <Nav.Link href="#contact">Contact</Nav.Link>
+            <NavLink to="/contact" activeClassName="active" className="nav-link">Contact</NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>

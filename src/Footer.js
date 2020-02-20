@@ -64,16 +64,24 @@ function Footer() {
               <h5 className="">Our Partners</h5>
               <div className="d-flex flex-wrap">
                 <div>
-                  <img src={AwsWhite} alt="partner_amazon"></img>
+                  <Link to="/about#partners">
+                    <img src={AwsWhite} alt="partner_amazon"></img>
+                  </Link>
                 </div>
                 <div>
-                  <img src={AzureWhite} alt="partner_azure"></img>
+                  <Link to="/about#partners">
+                    <img src={AzureWhite} alt="partner_azure"></img>
+                  </Link>
                 </div>
                 <div>
-                  <img src={GoogleCloudWhite} alt="partner_google"></img>
+                  <Link to="/about#partners">
+                    <img src={GoogleCloudWhite} alt="partner_google"></img>
+                  </Link>
                 </div>
                 <div>
-                  <img src={AtlassianWhite} alt="partner_atlassian"></img>
+                  <Link to="/about#partners">
+                    <img src={AtlassianWhite} alt="partner_atlassian"></img>
+                  </Link>
                 </div>
               </div>
             </Col>

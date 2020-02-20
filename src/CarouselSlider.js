@@ -28,7 +28,7 @@ function CarouselSlider() {
                 expenditure and allow you to deliver features faster.
               </p>
               <p>
-                <a href="./Services/DigitalTransformation">
+                <a href="./services/digital-transformation">
                   Learn more about how we can migrate your business
                 </a>
               </p>
@@ -53,7 +53,7 @@ function CarouselSlider() {
                 business Big Data on easy to read dashboards.
               </p>
               <p>
-                <a href="./Offers/Welcome2020">
+                <a href="./services/digital-transformation">
                   Learn more about integrating these technologies into your
                   business.
                 </a>
@@ -83,7 +83,7 @@ function CarouselSlider() {
                 starting from £250 per day.*.
               </p>
               <p>
-                <a href="./Offers/Welcome2020">
+                <a href="./services/cloud-expert-advice-and-support">
                   Learn more about Expert Advise &amp; Support
                 </a>
               </p>
@@ -116,7 +116,7 @@ function CarouselSlider() {
                 highly certified IT professionals ready to join your project.
               </p>
               <p>
-                <a href="./Offers/Welcome2020">Check our welcome offers.</a>
+                <a href="./services/dedicated-teams">Check our welcome offers.</a>
               </p>
             </div>
           </Container>
