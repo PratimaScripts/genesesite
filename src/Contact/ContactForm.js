@@ -31,6 +31,8 @@ export default function ContactForm() {
         date: new Date()
     })
 
+    const [error, setError] = useState("");
+
     const selectCountry = val => {
         setFormInput({
             ...formInput, location: val
@@ -116,12 +118,14 @@ export default function ContactForm() {
           formInput.email !== "" &&
           formInput.contact_method !== "" &&
           formInput.location !== "" &&
-          formInput.areaOfInterest !== "" &&
+        //   formInput.areaOfInterest.length !== 0 &&
+          formInput.location !== "" &&
           formInput.message !== ""
         ) {
+            // sales@genesesolution.com, shrawan@genesesolution.com
           let templateParams = {
             from_email: formInput.email,
-            to_email: "sales@genesesolution.com, shrawan@genesesolution.com",
+            to_email: "pratima@genesecloud.academy",
             html: `Sales Inquiry from ${formInput.fullname}`,
             contact_method: formInput.contact_method,
             name: formInput.fullname,
@@ -131,6 +135,12 @@ export default function ContactForm() {
             areaOfInterest: formInput.areaOfInterest,
             message: formInput.message
           };
+       
+
+          if(formInput.areaOfInterest.length === 0){
+              setError(<p style={{color: "red"}}>Enter your area of interest</p>);
+              return false;
+          }
     
           emailjs
             .send(
@@ -150,11 +160,14 @@ export default function ContactForm() {
               }
             );
         }
+
         
         if (form.checkValidity() === false) {
           event.preventDefault();
           event.stopPropagation();
         }
+
+    
     };
 
     const close_modal = () =>{
@@ -260,7 +273,7 @@ export default function ContactForm() {
                                 <Col lg={6}>
                                     <Form.Group>
                                         <Form.Label>Location</Form.Label>
-                                        <CountryDropdown className="form-control" value={formInput.location} onChange={selectCountry}/>
+                                        <CountryDropdown className="form-control" value={formInput.location} onChange={selectCountry} required/>
                                     </Form.Group>
 
                                     <Form.Group>
@@ -293,6 +306,7 @@ export default function ContactForm() {
                                             value="Digital Transformation"
                                             onChange={handleCheck}
                                         />
+                                        {error}
                                     </Form.Group>
                                 </Col>
                             </Row>
