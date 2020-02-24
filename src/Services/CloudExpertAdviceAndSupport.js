@@ -50,7 +50,7 @@ export default function CloudExpertAdviceAndSupport() {
             sure that your business adheres to regulations and best practices.
           </p>
           <p>
-            <a href="#/contact">Need advice? Get in touch!</a>
+            <Link to="/contact">Need advice? Get in touch!</Link>
           </p>
         </Container>
       </div>

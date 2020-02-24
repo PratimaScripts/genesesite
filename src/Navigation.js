@@ -7,7 +7,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { HashLink as Link } from "react-router-hash-link";
-import {NavLink} from "react-router-dom"; 
+import { NavLink } from "react-router-dom";
 
 function Navigation() {
   // const [isOpenAbout, setIsOpenAbout] = useState(false);
@@ -34,7 +34,7 @@ function Navigation() {
               // show={ isOpenAbout }
               onMouseEnter={() => setActiveDropdown("about")}
               onMouseLeave={clearActiveDropdown}
-              show={activeDropdown === "about"}   
+              show={activeDropdown === "about"}
             >
               <NavDropdown.Item>
                 <Link to="/about#who_we_are">Who we are</Link>
@@ -133,11 +133,11 @@ function Navigation() {
               <NavDropdown.Item href="/#/services/digital-transformation">
                 Digital Transformation
               </NavDropdown.Item>
-              <NavDropdown.Item href="/#/services/cloud-expert-advice-and-support">
-              Cloud Expert Advice & Support
-              </NavDropdown.Item>
               <NavDropdown.Item href="/#/services/software-development">
                 Software Development
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/#/services/cloud-expert-advice-and-support">
+                Cloud Expert Advice & Support
               </NavDropdown.Item>
               <NavDropdown.Item href="/#/services/dedicated-teams">
                 Dedicated Teams
@@ -159,7 +159,13 @@ function Navigation() {
               <NavDropdown.Item href="#support">Support</NavDropdown.Item>
             </NavDropdown> */}
 
-            <NavLink to="/contact" activeClassName="active" className="nav-link">Contact</NavLink>
+            <NavLink
+              to="/contact"
+              activeClassName="active"
+              className="nav-link"
+            >
+              Contact
+            </NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>

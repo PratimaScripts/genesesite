@@ -3,6 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 import Container from "react-bootstrap/Container";
 import SlideOne from "./carousel-images/digital-transformation-expert.png";
 import SlideTwo from "./carousel-images/cutting-edge-technology.png";
+import { HashLink as Link } from "react-router-hash-link";
 
 function CarouselSlider() {
   return (
@@ -28,9 +29,9 @@ function CarouselSlider() {
                 expenditure and allow you to deliver features faster.
               </p>
               <p>
-                <a href="./services/digital-transformation">
+                <Link to="/services/digital-transformation">
                   Learn more about how we can migrate your business
-                </a>
+                </Link>
               </p>
             </div>
           </Container>
@@ -53,10 +54,10 @@ function CarouselSlider() {
                 business Big Data on easy to read dashboards.
               </p>
               <p>
-                <a href="./services/digital-transformation">
+                <Link to="/services/digital-transformation">
                   Learn more about integrating these technologies into your
                   business.
-                </a>
+                </Link>
               </p>
             </div>
           </Container>
@@ -83,9 +84,9 @@ function CarouselSlider() {
                 starting from £250 per day.*.
               </p>
               <p>
-                <a href="./services/cloud-expert-advice-and-support">
+                <Link to="/services/cloud-expert-advice-and-support">
                   Learn more about Expert Advise &amp; Support
-                </a>
+                </Link>
               </p>
               <p>
                <small> * Prices depend on project duration and are subjected to VAT.</small>
@@ -116,7 +117,7 @@ function CarouselSlider() {
                 highly certified IT professionals ready to join your project.
               </p>
               <p>
-                <a href="./services/dedicated-teams">Check our welcome offers.</a>
+                <Link to="/services/dedicated-teams">Check our welcome offers.</Link>
               </p>
             </div>
           </Container>
