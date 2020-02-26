@@ -17,16 +17,12 @@ function CarouselSlider() {
           <Container>
             <div>
               <h3>Digital Transformation Experts</h3>
-              <h5>
-                Partners with the major cloud providers, we find the right cloud
-                solution for you
-              </h5>
               <p>
                 Our certified Architects, Developers and DevOps experts make
                 your transition to the cloud in a managed, cost-effective and
                 secure way. We build efficient, highly scalable, reliable
-                infrastructures and continuous delivery pipelines that reduce
-                expenditure and allow you to deliver features faster.
+                infrastructures and continuous delivery pipelines. Allowing you
+                to reduce expenditure and deliver features faster.
               </p>
               <p>
                 <Link to="/services/digital-transformation">
@@ -42,16 +38,13 @@ function CarouselSlider() {
           <Container>
             <div>
               <h3>Cutting Edge Technologies</h3>
-              <h5>
-                Integrate IoT, Big Data and Machine Learning into your business
-              </h5>
               <p>
                 Integrate enterprise services and the latest technologies into
                 the daily operations of your business. Optimise and automate
-                business processes using Artificial Intelligence such as text
-                processing and image recognition. Connect your apps to the world
-                of the Internet of Things (IoT) and collect, analyse and utilise
-                business Big Data on easy to read dashboards.
+                business processes using AI such as textprocessing and image
+                recognition. Connect your apps to the world of IoT and collect,
+                analyse and utilise business Big Data on easy to read
+                dashboards.
               </p>
               <p>
                 <Link to="/services/digital-transformation">
@@ -72,16 +65,14 @@ function CarouselSlider() {
         <Carousel.Caption className="dark">
           <Container>
             <div>
-              <h3>Expert Advise and Support</h3>
+              <h3>Expert Advice and Support</h3>
               <h5>Certified Experienced Cloud Professionals from £250/day*</h5>
               <p>
-                As partners of the major cloud providers such as AWS, Microsoft
-                Azure and Google Cloud, our fully qualified cloud Architects,
-                Developers and DevOps professionals will assess and optimise
-                your infrastructure and applications. We're ready to pick up
-                your cloud environment and manage it for you , so you can focus
-                on your business. Take advantage of our introductory offers
-                starting from £250 per day.*.
+                As partners of the major cloud providers, our team will assess
+                and optimise your infrastructure and applications. We're ready
+                to pick up your cloud environment and manage it for you, so you
+                can focus on your business. Take advantage of our introductory
+                offers starting from £250 per day.*.
               </p>
               <p>
                 <Link to="/services/cloud-expert-advice-and-support">
@@ -89,7 +80,10 @@ function CarouselSlider() {
                 </Link>
               </p>
               <p>
-               <small> * Prices depend on project duration and are subjected to VAT.</small>
+                <small>
+                  {" "}
+                  * Prices depend on project duration and are subjected to VAT.
+                </small>
               </p>
             </div>
           </Container>
@@ -105,19 +99,18 @@ function CarouselSlider() {
           <Container>
             <div>
               <h3>Build Your Own Team</h3>
-              <h5>
-                Hire from our of team experts or let us do the hiring for you
-              </h5>
               <p>
                 Improve the speed and flexibility of your organisation with
                 on-demand talent. Our thorough and sustainable hiring pipeline
                 provides the expertise you need, as and when you need them. Make
-                use of our internal team, or hire internationally. All you have
-                to do is define your criteria and we'll provide experienced,
-                highly certified IT professionals ready to join your project.
+                use of our internal team, or hire internationally. Just define
+                your criteria, we'll provide experienced IT professionals to
+                join your project.
               </p>
               <p>
-                <Link to="/services/dedicated-teams">Check our welcome offers.</Link>
+                <Link to="/services/dedicated-teams">
+                  Check our welcome offers.
+                </Link>
               </p>
             </div>
           </Container>
