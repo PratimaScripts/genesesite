@@ -1,13 +1,8 @@
 import React, { useState } from "react";
 import logo from "./logo.svg";
-import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
-// import Row from "react-bootstrap/Row";
-// import Col from "react-bootstrap/Col";
-import Nav from "react-bootstrap/Nav";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import { HashLink as Link } from "react-router-hash-link";
-import { NavLink } from "react-router-dom";
+import { Navbar, Nav, NavDropdown} from 'react-bootstrap';
 
 function Navigation() {
   // const [isOpenAbout, setIsOpenAbout] = useState(false);
@@ -36,18 +31,23 @@ function Navigation() {
               onMouseLeave={clearActiveDropdown}
               show={activeDropdown === "about"}
             >
-              <NavDropdown.Item>
+              {/* <NavDropdown.Item eventKey={1.1}>
                 <Link to="/about#who_we_are">Who we are</Link>
               </NavDropdown.Item>
-              <NavDropdown.Item>
+              <NavDropdown.Item eventKey={1.2}>
                 <Link to="/about#how_we_work">How we work</Link>
               </NavDropdown.Item>
-              <NavDropdown.Item>
-                <Link to="/about#certifications">Certifications</Link>
+              <NavDropdown.Item eventKey={1.3}>
+                <Link to="/about#certifications" style={{width: "100px"}}>Certifications</Link>
               </NavDropdown.Item>
-              <NavDropdown.Item>
+              <NavDropdown.Item eventKey={1.4}>
                 <Link to="/about#partners">Partners</Link>
-              </NavDropdown.Item>
+              </NavDropdown.Item> */}
+
+              <NavDropdown.Item eventKey={1.1} as={Link} to="/about#who_we_are">Who we are</NavDropdown.Item>
+              <NavDropdown.Item eventKey={1.2} as={Link} to="/about#how_we_work">How we work</NavDropdown.Item>
+              <NavDropdown.Item eventKey={1.3} as={Link} to="/about#certifications">Certifications</NavDropdown.Item>
+              <NavDropdown.Item eventKey={1.4} as={Link} to="/about#partners">Partners</NavDropdown.Item>
             </NavDropdown>
             {/* <NavDropdown title="Products" className="mega-menu">
               <Container className="d-block">
@@ -159,13 +159,9 @@ function Navigation() {
               <NavDropdown.Item href="#support">Support</NavDropdown.Item>
             </NavDropdown> */}
 
-            <NavLink
-              to="/contact"
-              activeClassName="active"
-              className="nav-link"
-            >
-              Contact
-            </NavLink>
+            {/* <NavLink to="/contact" activeClassName="active" className="nav-link">Contact</NavLink> */}
+            <Nav.Link href="#contact" eventKey="2">Contact</Nav.Link>
+
           </Nav>
         </Navbar.Collapse>
       </Container>

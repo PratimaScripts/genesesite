@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Carousel from "../CarouselSlider";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -47,6 +47,10 @@ function renderLink(link) {
 }
 
 function Homepage() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+ }, [])
+
   return (
     <div>
       <div id="carousel">
