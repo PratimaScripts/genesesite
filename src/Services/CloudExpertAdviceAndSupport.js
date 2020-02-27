@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import CloudAnalysis from "./cloud-expert.jpg";
 import { HashLink as Link } from "react-router-hash-link";
 
 export default function CloudExpertAdviceAndSupport() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+ }, [])
+ 
   return (
     <div>
       <div

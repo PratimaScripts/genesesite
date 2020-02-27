@@ -10,8 +10,12 @@ import {
   faChartLine
 } from "@fortawesome/free-solid-svg-icons";
 import Card from "react-bootstrap/Card";
+import { useEffect } from "react";
 
 export default function SoftwareDevelopment() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+ }, [])
   return (
     <div>
       <div className="section text-white bg-primary">
