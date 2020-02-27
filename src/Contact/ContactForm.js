@@ -131,7 +131,7 @@ export default function ContactForm() {
             // sales@genesesolution.com, shrawan@genesesolution.com
           let templateParams = {
             from_email: formInput.email,
-            to_email: "pratima@genesecloud.academy",
+            to_email: "sales@genesesolution.com, shrawan@genesesolution.com",
             html: `Sales Inquiry from ${formInput.fullname}`,
             contact_method: formInput.contact_method,
             name: formInput.fullname,
