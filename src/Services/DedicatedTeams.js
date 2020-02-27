@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import { HashLink as Link } from "react-router-hash-link";
 import DedicatedTeamsImage from "./dedicated-teams.png";
 
 export default function DedicatedTeams() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+ }, [])
+ 
   return (
     <div>
       <div className="section text-white bg-primary">

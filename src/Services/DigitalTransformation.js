@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import DigitalTransformationImage from "./digital-transformation.png";
 
 export default function DigitalTransformation() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+ }, [])
+ 
   return (
     <div>
       <div className="section bg-primary text-white">

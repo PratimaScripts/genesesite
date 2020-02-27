@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -41,6 +41,9 @@ import MicrosoftSysEngineer from "./microsoft-sys-engineer.png";
 import NagiosAdministrator from "./nagios-administrator.png";
 
 export default function About() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+ }, [])
   return (
     <div>
       <span className="hash-link" id="who_we_are"></span>

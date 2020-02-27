@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 // react-bootstrap
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -55,7 +55,10 @@ export default function ContactForm() {
             ...formInput, phone: val
         })
     }
-
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+    
     const [success, setSuccess] = useState(false);
     const [reset, setReset] = useState(false);
   
