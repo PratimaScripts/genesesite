@@ -36,7 +36,7 @@ function Footer() {
                   <h5>Quick Links</h5>
                   <ul>
                     <li>
-                      <Link to="/about#about">About Us</Link>
+                      <Link to="/about#who_we_are">About Us</Link>
                     </li>
                     <li>
                       <Link to="/about#how_we_work">How we Work</Link>
@@ -89,16 +89,16 @@ function Footer() {
               <h5>Services</h5>
               <ul>
                 <li>
-                  <a href="/#">Digital Transformation</a>
+                  <a href="/#/services/digital-transformation">Digital Transformation</a>
                 </li>
                 <li>
-                  <a href="/#">Cloud Development</a>
+                  <a href="/#/services/software-development">Software Development</a>
                 </li>
                 <li>
-                  <a href="/#">Expert Advice & Support</a>
+                  <a href="/#/services/cloud-expert-advice-and-support">Cloud Expert Advice & Support</a>
                 </li>
                 <li>
-                  <a href="/#">Dedicated Teams </a>
+                  <a href="/#/services/dedicated-teams">Dedicated Teams </a>
                 </li>
               </ul>
             </Col>
