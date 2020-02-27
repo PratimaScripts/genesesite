@@ -31,7 +31,7 @@ function Navigation() {
               onMouseLeave={clearActiveDropdown}
               show={activeDropdown === "about"}
             >
-              <NavDropdown.Item eventKey={1.1}>
+              {/* <NavDropdown.Item eventKey={1.1}>
                 <Link to="/about#who_we_are">Who we are</Link>
               </NavDropdown.Item>
               <NavDropdown.Item eventKey={1.2}>
@@ -42,8 +42,12 @@ function Navigation() {
               </NavDropdown.Item>
               <NavDropdown.Item eventKey={1.4}>
                 <Link to="/about#partners">Partners</Link>
-              </NavDropdown.Item>
+              </NavDropdown.Item> */}
 
+              <NavDropdown.Item eventKey={1.1} as={Link} to="/about#who_we_are">Who we are</NavDropdown.Item>
+              <NavDropdown.Item eventKey={1.2} as={Link} to="/about#how_we_work">How we work</NavDropdown.Item>
+              <NavDropdown.Item eventKey={1.3} as={Link} to="/about#certifications">Certifications</NavDropdown.Item>
+              <NavDropdown.Item eventKey={1.4} as={Link} to="/about#partners">Partners</NavDropdown.Item>
             </NavDropdown>
             {/* <NavDropdown title="Products" className="mega-menu">
               <Container className="d-block">
