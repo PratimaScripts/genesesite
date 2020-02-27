@@ -5,11 +5,12 @@ import Homepage from "./Homepage/Homepage";
 import Footer from "./Footer";
 import { HashRouter, Switch, Route } from "react-router-dom";
 import About from "./About/About";
-import DedicatedTeams from "./Services/DedicatedTeams.js";
-import SoftwareDevelopment from "./Services/SoftwareDevelopment.js";
-import DigitalTransformation from "./Services/DigitalTransformation.js";
-import CloudExpertAdviceAndSupport from "./Services/CloudExpertAdviceAndSupport.js";
+import DedicatedTeams from "./Services/DedicatedTeams";
+import SoftwareDevelopment from "./Services/SoftwareDevelopment";
+import DigitalTransformation from "./Services/DigitalTransformation";
+import CloudExpertAdviceAndSupport from "./Services/CloudExpertAdviceAndSupport";
 import ContactForm from "./Contact/ContactForm";
+import PrivacyPolicy from "./PrivacyPolicy/PrivacyPolicy";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="/services/digital-transformation" component={DigitalTransformation} />
             <Route path="/services/cloud-expert-advice-and-support" component={CloudExpertAdviceAndSupport} />
             <Route path="/contact" component={ContactForm} />
+            <Route path="/privacy-policy" component={PrivacyPolicy} />
           </Switch>
         </div>
         <Footer />
