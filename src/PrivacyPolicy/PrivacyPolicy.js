@@ -134,7 +134,7 @@ export default function PrivacyPolicy() {
           <h5>How to control cookies</h5>
           <p>
             You can control and/or delete cookies as you wish – for details, see{" "}
-            <a target="_blank" href="aboutcookies.org">
+            <a target="_blank" href="https://aboutcookies.org/">
               aboutcookies.org
             </a>
             . You can delete all cookies that are already on your computer and
@@ -179,7 +179,7 @@ export default function PrivacyPolicy() {
           <p>
             If you are unhappy with our use of your personal data, you are
             entitled to complain to the ICO:{" "}
-            <a target="_blank" href="ico.org.uk/concerns/">
+            <a target="_blank" href="https://ico.org.uk/make-a-complaint/">
               ico.org.uk/concerns/
             </a>
           </p>
