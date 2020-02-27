@@ -31,7 +31,10 @@ export default function ContactForm() {
         date: new Date()
     })
 
-    const [error, setError] = useState("");
+    const [error, setError] = useState({
+        areaOfInterest: "",
+        contact_method: ""
+    });
 
     const selectCountry = val => {
         setFormInput({
@@ -119,7 +122,7 @@ export default function ContactForm() {
         if (
           formInput.fullname !== "" &&
           formInput.email !== "" &&
-          formInput.contact_method !== "" &&
+        //   formInput.contact_method !== "" &&
           formInput.location !== "" &&
         //   formInput.areaOfInterest.length !== 0 &&
           formInput.location !== "" &&
@@ -128,7 +131,7 @@ export default function ContactForm() {
             // sales@genesesolution.com, shrawan@genesesolution.com
           let templateParams = {
             from_email: formInput.email,
-            to_email: "sales@genesesolution.com, shrawan@genesesolution.com",
+            to_email: "pratima@genesecloud.academy",
             html: `Sales Inquiry from ${formInput.fullname}`,
             contact_method: formInput.contact_method,
             name: formInput.fullname,
@@ -138,13 +141,18 @@ export default function ContactForm() {
             areaOfInterest: formInput.areaOfInterest,
             message: formInput.message
           };
-       
+
+
+          if (formInput.contact_method === ""){
+            setError({contact_method: <p style={{color: "red"}}>Enter the contact method</p>})
+            return false;
+        }       
 
           if(formInput.areaOfInterest.length === 0){
-              setError(<p style={{color: "red"}}>Enter your area of interest</p>);
+              setError({areaOfInterest:<p style={{color: "red"}}>Enter your area of interest</p>});
               return false;
           }
-    
+
           emailjs
             .send(
               "contact_service",
@@ -271,6 +279,7 @@ export default function ContactForm() {
 
                                         </Form.Group>:""
                                     }
+                                    {error.contact_method}
                                         
                                 </Col>
                                 <Col lg={6}>
@@ -309,7 +318,7 @@ export default function ContactForm() {
                                             value="Digital Transformation"
                                             onChange={handleCheck}
                                         />
-                                        {error}
+                                        {error.areaOfInterest}
                                     </Form.Group>
                                 </Col>
                             </Row>
@@ -332,7 +341,7 @@ export default function ContactForm() {
                             </Form.Group>
 
                             <Form.Group>
-                                <Form.Label><strong>Please note: </strong> In line with GDPR legislation, if you submit an enquiry using this form you are agreeing to our <a href="https://policies.google.com/privacy?hl=en">T&amp;Cs and Privacy Policy</a></Form.Label>
+                                <Form.Label><strong>Please note: </strong> In line with GDPR legislation, if you submit an enquiry using this form you are agreeing to our <a href="#/privacy-policy">T&amp;Cs and Privacy Policy</a></Form.Label>
                             </Form.Group>
 
                             <Button type="submit" className="mb-3 text-center">Submit</Button>
