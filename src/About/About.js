@@ -31,7 +31,6 @@ import ProfessionalDataEngineer from "./Professional-Data-Engineer.png";
 import CiscoCcnaLogo from "./cisco-ccna-logo.png";
 import RedHat from "./red-hat.png";
 import Nagios from "./nagios.png";
-import Microsoft from "./microsoft.png";
 import MicrosoftCertifiedITProfessional from "./microsoft-certified-it-professional.png";
 import ScrumMaster from "./scrum.png";
 import TechnologySpecialist from "./technology-specialist.png";
