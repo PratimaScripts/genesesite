@@ -96,10 +96,10 @@ function Homepage() {
                   Capital One.
                 </p>
                 <p>
-                  <a href="/services/digital-transformation">
+                  <Link to="/services/digital-transformation">
                     Learn more about how our certified cloud experts can take
                     care of your digital transformation
-                  </a>
+                  </Link>
                 </p>
               </div>
             </Col>
@@ -120,10 +120,10 @@ function Homepage() {
                   cloud services in a cost-effective way.
                 </h3>
                 <p>
-                  <a href="/services/software-development">
+                  <Link to="/services/software-development">
                     More details on how we can help you build and optimise your
                     website, mobile app or cloud services.
-                  </a>
+                  </Link>
                 </p>
               </div>
             </Col>
@@ -184,7 +184,7 @@ function Homepage() {
               <Card>
                 <Card.Body>
                   <div className="icon">
-                    <FontAwesomeIcon icon={faServer} />
+                    <FontAwesomeIcon icon={faShieldAlt} />
                   </div>
                   <p>
                   As cloud security experts, we'll advise on, provision and manage your cloud infrastructure, reducing cost and improving security and compliance.
@@ -196,7 +196,7 @@ function Homepage() {
               <Card>
                 <Card.Body>
                   <div className="icon">
-                    <FontAwesomeIcon icon={faShieldAlt} />
+                    <FontAwesomeIcon icon={faServer} />
                   </div>
                   <p>
                   We ensure your transition to the cloud is seamless. Using cloud managed services you can reduce capital or operational expense, accelerate time-to-business-value and improve on ROI.
@@ -206,9 +206,9 @@ function Homepage() {
             </Col>
           </Row>
           <p>
-            <a href="#/contact">
+            <Link to="/contact">
               Start a project with us, arrange a free consultation here.
-            </a>
+            </Link>
           </p>
         </Container>
       </div>
@@ -280,9 +280,9 @@ function Homepage() {
             </Col>
           </Row>
           <p>
-            <a href="#/contact">
+            <Link to="/contact">
               Find out more on how we can help in your industry.
-            </a>
+            </Link>
           </p>
         </Container>
       </div>

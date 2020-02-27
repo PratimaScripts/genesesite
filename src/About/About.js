@@ -197,8 +197,8 @@ export default function About() {
           <p>
             With over 200 technical certifications, we provide our clients with
             the highest levels of expertise and experience. We partner
-            exclusively with best-of-breed technology providers to deliver a
-            wide range of solutions for every business need.
+            exclusively with the best technology providers to deliver a wide
+            range of solutions for every business need.
           </p>
           <div className="certification-list">
             <h4>Amazon Web Services</h4>

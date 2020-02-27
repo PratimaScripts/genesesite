@@ -126,16 +126,16 @@ function Navigation() {
               onMouseLeave={clearActiveDropdown}
               show={activeDropdown === "services"}
             >
-              <NavDropdown.Item href="#action/2.1">
-                Cloud Digital Transformation
+              <NavDropdown.Item href="/#/services/digital-transformation">
+                Digital Transformation
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/2.2">
-                Expert Cloud Advise and Support
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/2.3">
+              <NavDropdown.Item href="/#/services/software-development">
                 Software Development
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/2.4">
+              <NavDropdown.Item href="/#/services/cloud-expert-advice-and-support">
+                Cloud Expert Advice & Support
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/#/services/dedicated-teams">
                 Dedicated Teams
               </NavDropdown.Item>
             </NavDropdown>
@@ -157,6 +157,7 @@ function Navigation() {
 
             {/* <NavLink to="/contact" activeClassName="active" className="nav-link">Contact</NavLink> */}
             <Nav.Link href="#contact" eventKey="2">Contact</Nav.Link>
+
           </Nav>
         </Navbar.Collapse>
       </Container>
