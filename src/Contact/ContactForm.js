@@ -144,12 +144,12 @@ export default function ContactForm() {
 
 
           if (formInput.contact_method === ""){
-            setError({contact_method: <p style={{color: "red"}}>Enter the contact method</p>})
+            setError({contact_method: <p style={{color: "red", paddingTop: "5px", paddingBottom: "5px"}}>Choose the preferred method of contact.</p>})
             return false;
         }       
 
           if(formInput.areaOfInterest.length === 0){
-              setError({areaOfInterest:<p style={{color: "red"}}>Enter your area of interest</p>});
+              setError({areaOfInterest:<p style={{color: "red", paddingTop: "5px"}}>Choose your area of interest.</p>});
               return false;
           }
 
